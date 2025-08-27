@@ -15,6 +15,7 @@ export const emailjsConfig = {
     templateParams: {
         to_name: 'Gaurish Sood',
         to_email: '9gaurish@gmail.com',
+        from_name: 'Portfolio Contact Form',
         // Other variables will be passed dynamically
     }
 };

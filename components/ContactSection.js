@@ -37,12 +37,20 @@ const ContactSection = () => {
                 emailjsConfig.serviceId,
                 emailjsConfig.templateId,
                 {
+                    // Sender information
                     from_name: formData.name,
                     from_email: formData.email,
                     message: formData.message,
-                    to_name: emailjsConfig.templateParams.to_name,
-                    to_email: emailjsConfig.templateParams.to_email,
+                    
+                    // Recipient information (YOU)
+                    to_name: 'Gaurish Sood',
+                    to_email: '9gaurish@gmail.com',
+                    
+                    // Reply information
                     reply_to: formData.email,
+                    
+                    // Additional context
+                    subject: `New message from ${formData.name} via portfolio`,
                 },
                 emailjsConfig.userId
             );
