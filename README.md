@@ -159,6 +159,10 @@ git clone https://github.com/Gaurishh/portfolio-website.git
 # Navigate to project directory
 cd portfolio-website/my-portfolio
 
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your actual EmailJS credentials
+
 # Install dependencies
 npm install
 

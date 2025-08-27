@@ -43,8 +43,8 @@ const ContactSection = () => {
                     message: formData.message,
                     
                     // Recipient information (YOU)
-                    to_name: 'Gaurish Sood',
-                    to_email: '9gaurish@gmail.com',
+                    to_name: emailjsConfig.templateParams.to_name,
+                    to_email: emailjsConfig.templateParams.to_email,
                     
                     // Reply information
                     reply_to: formData.email,
@@ -89,8 +89,8 @@ const ContactSection = () => {
                 <div className="bg-gray-700/50 p-4 rounded-lg">
                     <h3 className="text-lg font-semibold text-white mb-3">Contact Information</h3>
                     <div className="space-y-2 text-gray-300">
-                        <p><strong>Email:</strong> 9gaurish@gmail.com</p>
-                        <p><strong>Location:</strong> Gurgaon</p>
+                                                 <p><strong>Email:</strong> {emailjsConfig.templateParams.to_email}</p>
+                         <p><strong>Location:</strong> Gurgaon</p>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@ const ContactSection = () => {
             
             {submitStatus === 'error' && (
                 <div className="bg-red-600/20 border border-red-500 text-red-300 p-4 rounded-lg mb-6">
-                    ❌ Failed to send message. Please try again or email me directly at 9gaurish@gmail.com
+                                         ❌ Failed to send message. Please try again or email me directly at {emailjsConfig.templateParams.to_email}
                 </div>
             )}
             
