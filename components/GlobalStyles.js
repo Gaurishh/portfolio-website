@@ -2,11 +2,6 @@ import React from 'react';
 
 const GlobalStyles = () => (
   <style jsx global>{`
-    /* Import Tailwind CSS */
-    @import 'tailwindcss/base';
-    @import 'tailwindcss/components';
-    @import 'tailwindcss/utilities';
-    
     html {
       scroll-behavior: smooth;
     }

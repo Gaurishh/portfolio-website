@@ -13,11 +13,19 @@ const Sidebar = ({ activeSection, setActiveSection, sections, isMobile, onSectio
 
   // Track scroll progress
   useEffect(() => {
+    // Only run on client side to prevent hydration mismatch
+    if (typeof window === 'undefined') return;
+
     const handleScroll = () => {
       const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
       const currentProgress = (window.scrollY / totalHeight) * 100;
       setScrollProgress(currentProgress);
     };
+
+    // Initial calculation after component mounts
+    setTimeout(() => {
+      handleScroll();
+    }, 0);
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -40,7 +48,7 @@ const Sidebar = ({ activeSection, setActiveSection, sections, isMobile, onSectio
         <div className="absolute top-0 left-0 w-full h-1 bg-gray-800">
           <div 
             className="h-full bg-gradient-to-r from-blue-500 to-blue-400 transition-all duration-300 ease-out"
-            style={{ width: `${scrollProgress}%` }}
+            style={{ width: typeof window !== 'undefined' ? `${scrollProgress}%` : '0%' }}
           />
         </div>
         

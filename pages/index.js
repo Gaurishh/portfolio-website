@@ -71,8 +71,6 @@ export default function App() {
   // Smooth scroll to section
   const scrollToSection = (sectionKey) => {
     setIsScrolling(true);
-    // Immediately update active section for better UX
-    setActiveSection(sectionKey);
     
     const targetRef = sectionRefs.current[sectionKey];
     if (targetRef) {

@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Phone } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import SectionCard from './SectionCard';
+import { emailjsConfig } from '../config/emailjs';
 
 const ContactSection = () => {
     const [formData, setFormData] = useState({
@@ -10,6 +12,11 @@ const ContactSection = () => {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState(null);
+
+    // Initialize EmailJS
+    useEffect(() => {
+        emailjs.init(emailjsConfig.userId);
+    }, []);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -25,17 +32,41 @@ const ContactSection = () => {
         setSubmitStatus(null);
 
         try {
-            // Simulate form submission (replace with actual email service)
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            // Send email using EmailJS
+            const result = await emailjs.send(
+                emailjsConfig.serviceId,
+                emailjsConfig.templateId,
+                {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                    message: formData.message,
+                    to_name: emailjsConfig.templateParams.to_name,
+                    to_email: emailjsConfig.templateParams.to_email,
+                    reply_to: formData.email,
+                },
+                emailjsConfig.userId
+            );
             
-            // For now, just show success message
-            setSubmitStatus('success');
-            setFormData({ name: '', email: '', message: '' });
-            
-            // Reset status after 3 seconds
-            setTimeout(() => setSubmitStatus(null), 3000);
+            if (result.status === 200) {
+                setSubmitStatus('success');
+                setFormData({ name: '', email: '', message: '' });
+                
+                // Reset status after 5 seconds
+                setTimeout(() => setSubmitStatus(null), 5000);
+            } else {
+                throw new Error('Email failed to send');
+            }
         } catch (error) {
-            setSubmitStatus('error');
+            console.error('EmailJS Error:', error);
+            
+            // Show more specific error messages
+            if (error.text && error.text.includes('insufficient authentication scopes')) {
+                setSubmitStatus('auth_error');
+            } else if (error.text && error.text.includes('Service not found')) {
+                setSubmitStatus('service_error');
+            } else {
+                setSubmitStatus('error');
+            }
         } finally {
             setIsSubmitting(false);
         }
@@ -50,7 +81,7 @@ const ContactSection = () => {
                 <div className="bg-gray-700/50 p-4 rounded-lg">
                     <h3 className="text-lg font-semibold text-white mb-3">Contact Information</h3>
                     <div className="space-y-2 text-gray-300">
-                        <p><strong>Email:</strong> 211210070@nitdelhi.ac.in</p>
+                        <p><strong>Email:</strong> 9gaurish@gmail.com</p>
                         <p><strong>Location:</strong> Gurgaon</p>
                     </div>
                 </div>
@@ -58,13 +89,25 @@ const ContactSection = () => {
             
             {submitStatus === 'success' && (
                 <div className="bg-green-600/20 border border-green-500 text-green-300 p-4 rounded-lg mb-6">
-                    Thank you for your message! I&apos;ll get back to you soon.
+                    ✅ Message sent successfully! I&apos;ll get back to you soon.
                 </div>
             )}
             
             {submitStatus === 'error' && (
                 <div className="bg-red-600/20 border border-red-500 text-red-300 p-4 rounded-lg mb-6">
-                    Something went wrong. Please try again or email me directly.
+                    ❌ Failed to send message. Please try again or email me directly at 9gaurish@gmail.com
+                </div>
+            )}
+            
+            {submitStatus === 'auth_error' && (
+                <div className="bg-orange-600/20 border border-orange-500 text-orange-300 p-4 rounded-lg mb-6">
+                    🔐 Authentication Error: Gmail permissions need to be updated. Please check your EmailJS service configuration.
+                </div>
+            )}
+            
+            {submitStatus === 'service_error' && (
+                <div className="bg-red-600/20 border border-red-500 text-red-300 p-4 rounded-lg mb-6">
+                    ⚠️ Service Error: EmailJS service not found. Please verify your service ID in the configuration.
                 </div>
             )}
 
