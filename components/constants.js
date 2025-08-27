@@ -1,0 +1,202 @@
+import { Github, Linkedin, Twitter, Mail, Briefcase, User, Code, Award, Star, Phone } from 'lucide-react';
+
+export const sections = {
+  about: { label: 'About Me', icon: User },
+  profiles: { label: 'Coding Profiles', icon: Github },
+  experience: { label: 'Experience', icon: Briefcase },
+  projects: { label: 'Projects', icon: Code },
+  skills: { label: 'Skills & Tech Stacks', icon: Star },
+  certifications: { label: 'Courses & Certifications', icon: Award },
+  contact: { label: 'Contact', icon: Phone },
+};
+
+export const profiles = [
+  { name: 'GitHub', url: 'https://github.com/Gaurishh', handle: 'Gaurishh (20+ Repositories)', icon: Github },
+  { name: 'LeetCode', url: 'https://www.leetcode.com/GaurishS/', handle: 'GaurishS (800+ Problems, Knight Badge - Top 2.5%)', icon: Code },
+  { name: 'Codeforces', url: 'https://codeforces.com/profile/GaurishS', handle: 'GaurishS (350+ Problems, 1388 peak rating)', icon: Code },
+  { name: 'CodeChef', url: 'https://www.codechef.com/users/gaurish_s12', handle: 'gaurish_s12 (50+ Problems, 1709 rating)', icon: Code },
+  { name: 'GeeksforGeeks', url: 'https://www.geeksforgeeks.org/user/gaurish_s12', handle: 'gaurish_s12 (150+ Problems, 490 Score)', icon: Code },
+  { name: 'Naukri Code360', url: 'https://www.naukri.com/code360/profile/e6a56a68-5892-4123-88a9-2e9c24a33a19', handle: 'GaurishS (150+ Problems)', icon: Code },
+];
+
+export const experiences = [
+  { 
+    role: 'Software Engineer 1 (6M Intern + PPO Conversion)', 
+    company: 'BlackRock', 
+    period: 'Jan 2025 - Present', 
+    bullets: [
+      'Migrated event processing to the <strong>event-driven fanout server</strong> (BMSNetworkFanout), which pushed filtered updates, centralizing incoming event processing and replacing redundant polling jobs, which streamlined data delivery across systems and improved system response time by <strong>97%</strong>.',
+      'Built a <strong>GenAI chatbot</strong> using OpenAI APIs and vector databases (<strong>RAG</strong> architecture) to answer internal queries by indexing <strong>15</strong> wiki pages and PDFs, reducing documentation lookup time by <strong>70%</strong> and accelerating team onboarding by <strong>40%</strong>.',
+      'Built an <strong>LLM-powered tool</strong> that interprets full database context (schemas, relationships, metadata) to convert natural language to <strong>SQL</strong>, achieving <strong>90%+</strong> query accuracy and reducing data retrieval time by over <strong>50%</strong>.',
+      'Mastered advanced Python development through BlackRock\'s APDC Bronze, Silver, and Gold certifications, achieving a <strong>top 5%</strong> score on final project assessments as the most junior member on the team.'
+    ]
+  },
+  { 
+    role: 'Software Engineering Intern', 
+    company: 'Clearwater Analytics', 
+    period: 'Jun 2024 - Aug 2024', 
+    bullets: [
+      'Led <strong>end-to-end development</strong> of a new panel during migration from a desktop to web app, collaborating with <strong>2</strong> teammates (frontend & backend) to deliver the module in an Agile setup.',
+      'Architected robust backend services and interactive front-end interfaces utilizing <strong>Angular.js</strong>, and <strong>Kotlin</strong>, optimizing loading time by approximately <strong>25%</strong> compared to the desktop-based software, with <strong>enhanced scalability</strong>.',
+      'Received a <strong>6-month internship</strong> extension as a pathway to full-time conversion based on stellar performance.'
+    ]
+  },
+  { 
+    role: 'Research Intern', 
+    company: 'CISMR Lab', 
+    period: 'Jul 2023 - Aug 2023', 
+    bullets: [
+      'Collaborated with PhD scholars to analyze <strong>1000+</strong> foot pressure data points for early diabetes detection using <strong>predictive modeling</strong> and <strong>ensemble methods</strong> in Python, achieving nearly <strong>70%</strong> accuracy.',
+      'Employed <strong>Pandas</strong>, <strong>Numpy</strong>, <strong>Scikit-learn</strong>, <strong>Seaborn</strong>, and <strong>Matplotlib</strong> libraries in Python to streamline data processing workflows, reducing analysis time by <strong>40%</strong> and increasing the efficiency of data-driven projects.'
+    ]
+  },
+  { 
+    role: 'Placement Coordinator', 
+    company: 'Training and Placement Cell', 
+    period: 'Dec 2021 - Dec 2022', 
+    bullets: [
+      'Contacted <strong>150+</strong> companies through <strong>cold calling</strong> and <strong>email marketing</strong>; achieved a <strong>5%</strong> conversion rate, bolstering the institute\'s recruitment partnerships.'
+    ]
+  },
+  { 
+    role: 'Executive Member', 
+    company: 'Cultural Club', 
+    period: '2021 - 2022', 
+    bullets: [
+      '<strong>Event Management</strong>: Managed and co-ordinated a number of events both at team and individual level.',
+      'Set the momentum for <strong>stage and street plays</strong> organized on various occasions and executed <strong>script writing</strong>, <strong>role allocation</strong>, and <strong>management</strong>.',
+      'Won <strong>cash prize</strong> in the <strong>Beatboxing</strong> and Solo Singing competition organized by NIT Delhi during its Annual techno Cultural Festival.',
+      'Participated in various <strong>nukkad naataks</strong> and <strong>street plays</strong> in college.'
+    ]
+  },
+];
+
+export const projects = [
+  { 
+    name: 'Baker\'s Nest', 
+    bullets: [
+      'Launched a <strong>fully responsive</strong> website for a local bakery, with a <strong>landing page</strong> and an <strong>e-commerce page</strong>, integrating <strong>payment authentication</strong> using <strong>RazorPay</strong>, supporting over <strong>5 payment options</strong>, and secure <strong>login authentication</strong> with <strong>Auth0</strong>.',
+      'Collaborated with bakery owner to design <strong>Admin Panel UI/UX</strong>, decreasing order processing bottlenecks; optimized <strong>RESTful API</strong> design and <strong>MongoDB data modeling</strong>, and accelerated database response time by <strong>30%</strong>.',
+      'Implemented <strong>server-side pagination</strong> and <strong>lazy loading</strong>, reducing product load time by <strong>40%</strong> and improving retrieval efficiency, leading to a <strong>25%</strong> decrease in bounce rate.'
+    ],
+    tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'RazorPay', 'Auth0'], 
+    link: 'http://bit.ly/bakersNestWebsite',
+    github: 'https://github.com/Gaurishh/bakers-nest'
+  },
+  { 
+    name: 'Amul Protein Products Notifier', 
+    bullets: [
+      'Engineered a <strong>full-stack</strong> web application designed to scale to <strong>10,000+ users</strong> that delivers <strong>real-time alerts</strong> on <strong>Amul product restocks</strong>, eliminating <strong>manual availability checks</strong> and enabling timely purchases of fast-selling items.',
+      'Scraped inventory every <strong>10 minutes</strong> using <strong>Python & Selenium Web Driver</strong>, integrated with a <strong>FastAPI backend</strong>, <strong>MongoDB</strong> for scalable data storage, and a <strong>responsive React.js frontend</strong>.',
+      'Automated user notifications via <strong>email</strong> using a <strong>Redis-backed job queue</strong> and <strong>Node.js/Express backend</strong>, ensuring seamless and timely delivery of stock updates.'
+    ],
+    tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'FastAPI', 'Python', 'Selenium', 'Redis'], 
+    link: 'https://amul-protein-products-notifier.onrender.com',
+    github: 'https://github.com/Gaurishh/amul-protein-products-notifier'
+  },
+  { 
+    name: 'NITD Codes', 
+    bullets: [
+      'Engineered a <strong>cross-platform mobile application</strong> using <strong>Flutter</strong> and <strong>Dart</strong>, aiming to achieve over <strong>500 monthly active user</strong> engagements by providing <strong>streamlined posting</strong> and <strong>discussion features</strong> for coding topics among NIT Delhi students.',
+      'Implemented <strong>Firebase authentication</strong> with <strong>email verification</strong>, <strong>password strength check</strong>, <strong>forgot password feature</strong>, and <strong>reCAPTCHA verification</strong> during registration for secure access.',
+      'Integrated <strong>profile management features</strong>, allowing users to edit bios, change usernames, and engage in <strong>real-time chat</strong> with others in dedicated chatrooms for coding discussions.'
+    ],
+    tech: ['Flutter', 'Dart', 'Firebase', 'Firebase Authentication', 'Firebase Firestore', 'Real-time Chat'], 
+    link: 'https://drive.google.com/file/u/1/d/1ECKLqW9QBPaorEe5dcJbnH9efyThqjni/view?usp=drive_link',
+    github: 'https://github.com/Gaurishh/flutter_nitd-codes-app'
+  },
+  { 
+    name: 'Cafe In', 
+    bullets: [
+      'Built a website for the college cafeteria, serving <strong>100+ students</strong> every day.',
+      'Managed solely the <strong>Database Management System (DBMS)</strong> for the website using <strong>MySQL</strong>, implementing <strong>50+ basic, intermediate, and advanced SQL queries</strong>.',
+      'Collaborated with a <strong>3-member team</strong> to implement <strong>front-end and back-end</strong> functionalities.'
+    ],
+    tech: ['SQL', 'MySQL', 'Database Management', 'Team Collaboration'], 
+    link: 'https://pdfhost.io/v/dx0bRyRxc_CafeIn_Report_Final',
+    github: null
+  },
+  { 
+    name: 'BookShelf', 
+    bullets: [
+      'Created a website for displaying, adding, and updating the books in a book-store, showcasing <strong>3 pre-existing books</strong>.',
+      'Implemented <strong>CRUD operations</strong> allowing users to add, delete, and edit book listings.',
+      'Designed simple routing through <strong>4 pages</strong> for easy navigation and management of book inventory.',
+      'Ensured <strong>cross-browser compatibility</strong> and <strong>responsive design</strong>, ensuring tested functionality across <strong>5+ environments</strong>.'
+    ],
+    tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'CRUD Operations', 'Responsive Design'], 
+    link: 'https://book-shelf-4628.onrender.com/books',
+    github: 'https://github.com/Gaurishh/book-shelf',
+    backend: 'https://github.com/Gaurishh/book-shelf-backend'
+  },
+];
+
+export const certifications = [
+  { 
+    name: 'Mastering System Design', 
+    issuer: 'Udemy', 
+    date: 'July 2025',
+    duration: '23 hours',
+    description: 'Advanced system design principles, scalability patterns, and distributed systems architecture.',
+    link: 'https://www.udemy.com/certificate/UC-205b7617-4c28-4b11-b005-0a57c2398e9f'
+  },
+  { 
+    name: 'BlackRock APDC Gold', 
+    issuer: 'BlackRock', 
+    date: 'March 2025',
+    duration: '3 weeks',
+    description: 'Advanced Python Development Certification - Gold level achievement with top 5% project assessment score.'
+  },
+  { 
+    name: 'BlackRock APDC Silver', 
+    issuer: 'BlackRock', 
+    date: 'March 2025',
+    duration: '3 weeks',
+    description: 'Advanced Python Development Certification - Silver level achievement.'
+  },
+  { 
+    name: 'BlackRock APDC Bronze', 
+    issuer: 'BlackRock', 
+    date: 'February 2025',
+    duration: '3 weeks',
+    description: 'Advanced Python Development Certification - Bronze level achievement.'
+  },
+  { 
+    name: 'The Web Development Bootcamp', 
+    issuer: 'Udemy', 
+    date: 'July 2023',
+    duration: '66 hours',
+    description: 'Comprehensive full-stack web development course covering HTML, CSS, JavaScript, Node.js, and databases.',
+    link: 'https://www.udemy.com/certificate/UC-c33a6c7b-6468-4bda-9a9c-11ce58e5d2de'
+  },
+  { 
+    name: 'Python for Data Science and Machine Learning Bootcamp', 
+    issuer: 'Udemy', 
+    date: 'July 2023',
+    duration: '25 hours',
+    description: 'Comprehensive Python course covering data science, machine learning, and statistical analysis techniques.',
+    link: 'https://www.udemy.com/certificate/UC-188ebc05-a131-4602-9fc1-2e91774f2ab7'
+  },
+  { 
+    name: 'Master DSA in C++', 
+    issuer: 'Coding Blocks', 
+    date: 'May 2022',
+    duration: '6 months',
+    description: 'Data Structures and Algorithms mastery with C++ implementation and competitive programming techniques.',
+    link: 'https://pdfhost.io/v/XwTXfQdBt_CB_Certificate'
+  },
+  { 
+    name: 'ReactJS Course', 
+    issuer: 'Udemy', 
+    date: 'October 2023',
+    duration: '71 hours (Completed Partially)',
+    description: 'Comprehensive React.js development course covering components, hooks, state management, and modern React patterns.'
+  }
+];
+
+export const skills = {
+  'Languages': ['C/C++ (Most Proficient)', 'Java/Kotlin', 'Python', 'HTML', 'CSS', 'JavaScript', 'Dart', 'SQL'],
+  'Frameworks & Libraries': ['React.js', 'Angular.js', 'Express.js', 'Node.js', 'Bootstrap', 'Flutter'],
+  'Tools & Libraries': ['Gradle', 'Git', 'MongoDB', 'Mongoose', 'Pandas', 'Numpy', 'Matplotlib', 'Seaborn'],
+  'Relevant Coursework': ['Machine Learning', 'Neural Networks', 'Computer Vision', 'Operating System', 'Artificial Intelligence', 'Computer Networks', 'Design and Analysis of Algorithms', 'Software Engineering', 'Object Oriented Programming', 'Database Management Systems', 'Data Structures'],
+};

@@ -1,0 +1,117 @@
+import React, { useState } from 'react';
+import { Phone } from 'lucide-react';
+import SectionCard from './SectionCard';
+
+const ContactSection = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState(null);
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setSubmitStatus(null);
+
+        try {
+            // Simulate form submission (replace with actual email service)
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            
+            // For now, just show success message
+            setSubmitStatus('success');
+            setFormData({ name: '', email: '', message: '' });
+            
+            // Reset status after 3 seconds
+            setTimeout(() => setSubmitStatus(null), 3000);
+        } catch (error) {
+            setSubmitStatus('error');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+    return (
+        <SectionCard title="Contact" icon={Phone}>
+            <div className="mb-6">
+                <p className="text-lg text-gray-300 mb-4">
+                    I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out!
+                </p>
+                <div className="bg-gray-700/50 p-4 rounded-lg">
+                    <h3 className="text-lg font-semibold text-white mb-3">Contact Information</h3>
+                    <div className="space-y-2 text-gray-300">
+                        <p><strong>Email:</strong> 211210070@nitdelhi.ac.in</p>
+                        <p><strong>Location:</strong> Gurgaon</p>
+                    </div>
+                </div>
+            </div>
+            
+            {submitStatus === 'success' && (
+                <div className="bg-green-600/20 border border-green-500 text-green-300 p-4 rounded-lg mb-6">
+                    Thank you for your message! I&apos;ll get back to you soon.
+                </div>
+            )}
+            
+            {submitStatus === 'error' && (
+                <div className="bg-red-600/20 border border-red-500 text-red-300 p-4 rounded-lg mb-6">
+                    Something went wrong. Please try again or email me directly.
+                </div>
+            )}
+
+            <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input 
+                        type="text" 
+                        name="name"
+                        placeholder="Your Name" 
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full bg-gray-700/50 border border-gray-600 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" 
+                    />
+                    <input 
+                        type="email" 
+                        name="email"
+                        placeholder="Your Email" 
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full bg-gray-700/50 border border-gray-600 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" 
+                    />
+                </div>
+                <textarea 
+                    placeholder="Your Message" 
+                    name="message"
+                    rows="5" 
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full bg-gray-700/50 border border-gray-600 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                />
+                <button 
+                    type="submit" 
+                    disabled={isSubmitting}
+                    className={`bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg ${
+                        isSubmitting 
+                            ? 'opacity-50 cursor-not-allowed' 
+                            : 'hover:bg-blue-700 hover:shadow-blue-500/25'
+                    }`}
+                >
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
+            </form>
+        </SectionCard>
+    );
+};
+
+export default ContactSection;

@@ -1,0 +1,10 @@
+export { default as AboutSection } from './AboutSection';
+export { default as ProfilesSection } from './ProfilesSection';
+export { default as ExperienceSection } from './ExperienceSection';
+export { default as ProjectsSection } from './ProjectsSection';
+export { default as SkillsSection } from './SkillsSection';
+export { default as CertificationsSection } from './CertificationsSection';
+export { default as ContactSection } from './ContactSection';
+export { default as Sidebar } from './Sidebar';
+export { default as SectionCard } from './SectionCard';
+export { default as GlobalStyles } from './GlobalStyles';
