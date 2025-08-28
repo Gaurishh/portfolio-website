@@ -29,7 +29,7 @@ const AboutSection = () => (
                        I thrive on solving complex problems (1500+ DSA/CP problems solved, <strong>2010</strong> rating on <strong>LeetCode</strong>) and am now channeling that same drive into designing robust backend systems and impactful applications.
                    </p>
                    <p className="text-gray-300 leading-relaxed mt-6 text-base md:text-lg">
-                       When I&apos;m not working, you&apos;ll usually find me drinking coffe, exploring new technologies, competing in coding contests, or brainstorming product ideas that simplify everyday life.
+                       When I&apos;m not working, you&apos;ll usually find me drinking coffee, exploring new technologies, competing in coding contests, or brainstorming product ideas that simplify everyday life.
                    </p>
         </div>
          </div>
