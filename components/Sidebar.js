@@ -101,7 +101,6 @@ const Sidebar = ({ activeSection, setActiveSection, sections, isMobile, onSectio
             <div className="flex flex-wrap gap-3">
                 <a href="https://github.com/Gaurishh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500 transition-colors" title="GitHub"><Github size={20}/></a>
                 <a href="https://www.linkedin.com/in/gaurish-sood-776639201/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500 transition-colors" title="LinkedIn"><Linkedin size={20}/></a>
-                <a href="mailto:211210070@nitdelhi.ac.in" className="text-gray-400 hover:text-blue-500 transition-colors" title="Email"><Mail size={20}/></a>
             </div>
         </div>
       </div>
