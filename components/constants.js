@@ -26,7 +26,8 @@ export const experiences = [
     period: 'Jan 2025 - Present', 
     bullets: [
       'Migrated event processing to the <strong>event-driven fanout server</strong> (BMSNetworkFanout), which pushed filtered updates, centralizing incoming event processing and replacing redundant polling jobs, which streamlined data delivery across systems and improved system response time by <strong>97%</strong>.',
-      'Built a <strong>GenAI chatbot</strong> using OpenAI APIs and vector databases (<strong>RAG</strong> architecture) to answer internal queries by indexing <strong>15</strong> wiki pages and PDFs, reducing documentation lookup time by <strong>70%</strong> and accelerating team onboarding by <strong>40%</strong>.',
+      'Programmed an automated sensitive stock detection system with SQL and Jinja templates, reducing manual reviews by <strong>90%</strong>; ensured accuracy by writing <strong>20+</strong> comprehensive unit tests with <strong>99%</strong> coverage.',
+      'Automated the comparison of pre- and post-modification snapshots through python scripts, detecting anomalies with <strong>100%</strong> accuracy and reducing issue detection time by <strong>60%</strong>.',
       'Built an <strong>LLM-powered tool</strong> that interprets full database context (schemas, relationships, metadata) to convert natural language to <strong>SQL</strong>, achieving <strong>90%+</strong> query accuracy and reducing data retrieval time by over <strong>50%</strong>.',
       'Mastered advanced Python development through BlackRock\'s APDC Bronze, Silver, and Gold certifications, achieving a <strong>top 5%</strong> score on final project assessments as the most junior member on the team.'
     ]
