@@ -20,7 +20,7 @@ const AboutSection = () => (
              </div>
                      <div className="text-center md:text-left max-w-xl">
                                             <p className="text-gray-300 leading-relaxed text-base md:text-lg">
-                       Hi, I&apos;m <strong className="text-blue-400">Gaurish Sood</strong>, a <strong>CSE</strong> graduate from <strong>NIT Delhi</strong> and a software developer passionate about building <strong>impactful</strong> digital products.
+                       Hi, I&apos;m <strong className="text-blue-400">Gaurish</strong>, a <strong>CSE</strong> graduate from <strong>NIT Delhi</strong> and a software developer passionate about building <strong>impactful</strong> digital products.
                    </p>
                    <p className="text-gray-300 leading-relaxed mt-6 text-base md:text-lg">
                    I specialize in <strong>backend</strong> and <strong>full-stack</strong> development, with hands-on experience in the MERN stack, and building <strong>scalable systems</strong>. I&apos;ve built projects ranging from a coding discussion platform for my campus to a product restock notifier.
