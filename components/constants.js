@@ -187,7 +187,7 @@ export const certifications = [
     link: 'https://pdfhost.io/v/XwTXfQdBt_CB_Certificate'
   },
   { 
-    name: 'ReactJS Course', 
+    name: 'ReactJS: The Complete Guide', 
     issuer: 'Udemy', 
     date: 'October 2023',
     duration: '71 hours (Completed Partially)',
