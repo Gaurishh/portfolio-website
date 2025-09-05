@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import Head from 'next/head';
 import {
   AboutSection,
   ProfilesSection,
@@ -90,8 +91,13 @@ export default function App() {
   };
 
   return (
-    <div className="bg-gray-900 text-gray-200 font-sans antialiased">
-      <GlobalStyles />
+    <>
+      <Head>
+        <title>Gaurish Sood</title>
+        <meta name="description" content="Gaurish Sood - Portfolio Website" />
+      </Head>
+      <div className="bg-gray-900 text-gray-200 font-sans antialiased">
+        <GlobalStyles />
       <div className="flex flex-col md:flex-row min-h-screen">
         <Sidebar 
           activeSection={activeSection} 
@@ -127,6 +133,6 @@ export default function App() {
           </div>
         </main>
       </div>
-    </div>
+    </>
   );
 }
