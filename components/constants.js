@@ -2,9 +2,9 @@ import { Github, Linkedin, Twitter, Mail, Briefcase, User, Code, Award, Star, Ph
 
 export const sections = {
   about: { label: 'About Me', icon: User },
-  profiles: { label: 'Coding Profiles', icon: Github },
   experience: { label: 'Experience', icon: Briefcase },
   projects: { label: 'Projects', icon: Code },
+  profiles: { label: 'Coding Profiles', icon: Github },
   skills: { label: 'Skills & Tech Stacks', icon: Star },
   certifications: { label: 'Courses & Certifications', icon: Award },
   contact: { label: 'Contact', icon: Phone },
@@ -22,7 +22,7 @@ export const profiles = [
 
 export const experiences = [
   { 
-    role: 'Software Engineer 1 (6M Intern + Full Tit ime Conversion)', 
+    role: 'Software Engineer 1 (6M Intern + Full Time Conversion)', 
     company: 'BlackRock', 
     period: 'Jan 2025 - Present', 
     bullets: [

@@ -111,14 +111,14 @@ export default function App() {
             <div ref={(ref) => setSectionRef('about', ref)} className="min-h-screen flex items-center w-full">
               <AboutSection />
             </div>
-            <div ref={(ref) => setSectionRef('profiles', ref)} className="pt-20">
-              <ProfilesSection />
-            </div>
             <div ref={(ref) => setSectionRef('experience', ref)} className="pt-20">
               <ExperienceSection />
             </div>
             <div ref={(ref) => setSectionRef('projects', ref)} className="pt-20">
               <ProjectsSection />
+            </div>
+            <div ref={(ref) => setSectionRef('profiles', ref)} className="pt-20">
+              <ProfilesSection />
             </div>
 
             <div ref={(ref) => setSectionRef('skills', ref)} className="pt-20">

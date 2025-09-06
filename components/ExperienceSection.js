@@ -12,10 +12,10 @@ const ExperienceSection = () => {
                         <div className="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 mt-1.5 border-2 border-gray-900"></div>
                         <p className="text-sm text-gray-400">{exp.period}</p>
                         <h3 className="text-xl font-bold text-white mt-1">
-                            {exp.role.includes('(6M Intern + PPO Conversion)') ? (
+                            {exp.role.includes('(6M Intern + Full Time Conversion)') ? (
                                 <>
                                     Software Engineer 1{' '}
-                                    <span className="text-sm italic text-gray-400">(6M Intern + PPO Conversion)</span>
+                                    <span className="text-sm italic text-gray-400">(6M Intern + Full Time Conversion)</span>
                                 </>
                             ) : (
                                 exp.role
