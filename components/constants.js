@@ -4,8 +4,8 @@ export const sections = {
   about: { label: 'About Me', icon: User },
   experience: { label: 'Experience', icon: Briefcase },
   projects: { label: 'Projects', icon: Code },
-  profiles: { label: 'Coding Profiles', icon: Github },
   skills: { label: 'Skills & Tech Stacks', icon: Star },
+  profiles: { label: 'Coding Profiles', icon: Github },
   certifications: { label: 'Courses & Certifications', icon: Award },
   contact: { label: 'Contact', icon: Phone },
 };
