@@ -22,7 +22,7 @@ export const profiles = [
 
 export const experiences = [
   { 
-    role: 'Software Engineer 1 (6M Intern + PPO Conversion)', 
+    role: 'Software Engineer 1 (6M Intern + Full Tit ime Conversion)', 
     company: 'BlackRock', 
     period: 'Jan 2025 - Present', 
     bullets: [
