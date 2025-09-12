@@ -6,19 +6,19 @@ import SectionCard from './SectionCard';
 const AboutSection = () => (
   <SectionCard title="About Me" icon={User}>
          <div className="flex flex-col items-center justify-center min-h-[calc(100vh-12rem)] w-full px-6 md:px-12">
-         <div className="flex flex-col md:flex-row items-center mb-8">
-             <div className="mb-8 md:mb-0 md:mr-10 flex-shrink-0">
+          <div className="flex flex-col xl:flex-row items-center mb-8">
+              <div className="mb-8 xl:mb-0 xl:mr-10 flex-shrink-0">
                  <Image 
                      src="/profile-photo.jpg" 
                      alt="Your Name - Software Engineer" 
                      width={512}
                      height={512}
-                     className="rounded-full w-64 h-64 md:w-[28rem] md:h-[28rem] border-4 border-gray-700 object-cover object-top"
+                      className="rounded-full w-64 h-64 xl:w-[28rem] xl:h-[28rem] border-4 border-gray-700 object-cover object-top"
                      style={{ objectPosition: 'center 30%' }}
                      priority
                  />
              </div>
-                     <div className="text-center md:text-left max-w-xl">
+                     <div className="text-center xl:text-left max-w-xl">
                                             <p className="text-gray-300 leading-relaxed text-base md:text-lg">
                        Hi, I&apos;m <strong className="text-blue-400">Gaurish</strong>, a <strong>CSE</strong> graduate from <strong>NIT Delhi</strong> and a software developer passionate about building <strong>impactful</strong> digital products.
                    </p>

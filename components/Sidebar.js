@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Code, Mail } from 'lucide-react';
+import { Github, Linkedin, Code, Mail, ChevronRight } from 'lucide-react';
 
 const Sidebar = ({ activeSection, setActiveSection, sections, isMobile, onSectionClick }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -109,15 +109,23 @@ const Sidebar = ({ activeSection, setActiveSection, sections, isMobile, onSectio
   if (isMobile) {
     return (
       <>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="fixed top-4 left-4 z-50 p-2 bg-gray-800 rounded-md md:hidden"
-        >
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-        </button>
+        {!isOpen && (
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="fixed top-1/2 left-0 transform -translate-y-1/2 z-50 p-3 bg-gray-800/90 backdrop-blur-sm rounded-r-lg md:hidden hover:bg-gray-700/90 transition-all duration-300 shadow-lg border border-gray-600/50"
+          >
+            <ChevronRight className="w-5 h-5 text-white" />
+          </button>
+        )}
         <div className={`fixed top-0 left-0 h-full z-40 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <SidebarContent />
         </div>
+        {isOpen && (
+          <div 
+            className="fixed inset-0 z-30 bg-black/50 backdrop-blur-sm md:hidden"
+            onClick={() => setIsOpen(false)}
+          />
+        )}
       </>
     );
   }
