@@ -80,7 +80,7 @@ const Sidebar = ({ activeSection, setActiveSection, sections, isMobile, onSectio
                   }`} />
                   <Icon 
                     size={20} 
-                    className={`mr-4 transition-all duration-300 ${
+                    className={`ml-2 mr-4 transition-all duration-300 ${
                       activeSection === key 
                         ? 'text-white transform scale-110' 
                         : 'text-gray-400 group-hover:text-gray-300'
