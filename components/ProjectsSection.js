@@ -19,15 +19,15 @@ const ProjectsSection = () => {
                         <div className="flex justify-between items-start mb-2">
                             <h3 className="text-xl font-bold text-white flex-1">{project.name}</h3>
                             <div className="flex gap-3 ml-4" suppressHydrationWarning>
-                                <a href={project.link} className="text-blue-400 hover:text-blue-300 font-medium text-sm">View Project ↗</a>
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 font-medium text-sm">View Project ↗</a>
                                 {project.name === 'BookShelf' ? (
                                     <>
-                                        <a href={project.github} className="text-gray-400 hover:text-blue-300 font-medium text-sm">Frontend ↗</a>
-                                        <a href={project.backend} className="text-gray-400 hover:text-blue-300 font-medium text-sm">Backend ↗</a>
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300 font-medium text-sm">Frontend ↗</a>
+                                        <a href={project.backend} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300 font-medium text-sm">Backend ↗</a>
                                     </>
                                 ) : (
                                     project.github && (
-                                        <a href={project.github} className="text-gray-400 hover:text-blue-300 font-medium text-sm">GitHub ↗</a>
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300 font-medium text-sm">GitHub ↗</a>
                                     )
                                 )}
                             </div>
