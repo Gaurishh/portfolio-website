@@ -34,7 +34,7 @@ const ProjectsSection = () => {
                         </div>
                         {project.name === 'Amul Protein Products Notifier' && (
                             <div className="bg-red-600 text-white text-sm font-semibold px-3 py-1 rounded-full inline-block mb-3 w-fit">
-                                In-use by 50+ users
+                                50+ Active Users
                             </div>
                         )}
                         {project.name === 'Baker\'s Nest' && (
