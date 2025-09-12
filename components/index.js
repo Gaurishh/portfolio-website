@@ -8,3 +8,4 @@ export { default as ContactSection } from './ContactSection';
 export { default as Sidebar } from './Sidebar';
 export { default as SectionCard } from './SectionCard';
 export { default as GlobalStyles } from './GlobalStyles';
+export { default as ClientOnly } from './ClientOnly';
