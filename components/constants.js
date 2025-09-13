@@ -82,7 +82,7 @@ export const projects = [
       'Implemented <strong>server-side pagination</strong> and <strong>lazy loading</strong>, reducing product load time by <strong>40%</strong> and improving retrieval efficiency, leading to a <strong>25%</strong> decrease in bounce rate.'
     ],
     tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'RazorPay', 'Auth0'], 
-    link: 'http://bit.ly/bakersNestWebsite',
+    link: 'https://bakers-nest.onrender.com',
     github: 'https://github.com/Gaurishh/bakers-nest'
   },
   { 
