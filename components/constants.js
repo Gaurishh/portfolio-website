@@ -27,9 +27,9 @@ export const experiences = [
     period: 'Jan 2025 - Present', 
     bullets: [
       'Migrated event processing to the <strong>event-driven fanout server</strong> (BMSNetworkFanout), which pushed filtered updates, centralizing incoming event processing and replacing redundant polling jobs, which streamlined data delivery across systems and improved system response time by <strong>97%</strong>.',
-      'Programmed an automated sensitive stock detection system with SQL and Jinja templates, reducing manual reviews by <strong>90%</strong>; ensured accuracy by writing <strong>20+</strong> comprehensive unit tests with <strong>99%</strong> coverage.',
-      'Automated the comparison of pre- and post-modification snapshots through python scripts, detecting anomalies with <strong>100%</strong> accuracy and reducing issue detection time by <strong>60%</strong>.',
       'Built an <strong>LLM-powered tool</strong> that interprets full database context (schemas, relationships, metadata) to convert natural language to <strong>SQL</strong>, achieving <strong>90%+</strong> query accuracy and reducing data retrieval time by over <strong>50%</strong>.',
+      'Automated the comparison of pre- and post-modification snapshots through python scripts, detecting anomalies with <strong>100%</strong> accuracy and reducing issue detection time by <strong>60%</strong>.',
+      'Programmed an automated sensitive stock detection system with SQL and Jinja templates, reducing manual reviews by <strong>90%</strong>; ensured accuracy by writing <strong>20+</strong> comprehensive unit tests with <strong>99%</strong> coverage.',
       'Mastered advanced Python development through BlackRock\'s APDC Bronze, Silver, and Gold certifications, achieving a <strong>top 5%</strong> score on final project assessments as the most junior member on the team.'
     ]
   },
@@ -79,7 +79,7 @@ export const projects = [
     bullets: [
       'Launched a <strong>fully responsive</strong> website for a local bakery, with a <strong>landing page</strong> and an <strong>e-commerce page</strong>, integrating <strong>payment authentication</strong> using <strong>RazorPay</strong>, supporting over <strong>5 payment options</strong>, and secure <strong>login authentication</strong> with <strong>Auth0</strong>.',
       'Collaborated with bakery owner to design <strong>Admin Panel UI/UX</strong>, decreasing order processing bottlenecks; optimized <strong>RESTful API</strong> design and <strong>MongoDB data modeling</strong>, and accelerated database response time by <strong>30%</strong>.',
-      'Implemented <strong>server-side pagination</strong> and <strong>lazy loading</strong>, reducing product load time by <strong>40%</strong> and improving retrieval efficiency, leading to a <strong>25%</strong> decrease in bounce rate.'
+      'Implemented <strong>server-side pagination</strong> and <strong>lazy loading</strong>, and leveraged <strong>React Redux</strong> to efficiently <strong>manage asynchronous data</strong> and UI state, reducing product load time by <strong>40%</strong> and improving retrieval efficiency.'
     ],
     tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'RazorPay', 'Auth0'], 
     link: 'https://bakers-nest.onrender.com',
@@ -89,10 +89,10 @@ export const projects = [
     name: 'Amul Protein Products Notifier', 
     bullets: [
       'Engineered a <strong>full-stack</strong> web application designed to scale to <strong>10,000+ users</strong> that delivers <strong>real-time alerts</strong> on <strong>Amul product restocks</strong>, eliminating <strong>manual availability checks</strong> and enabling timely purchases of fast-selling items.',
-      'Scraped inventory every <strong>10 minutes</strong> using <strong>Python & Selenium Web Driver</strong>, integrated with a <strong>FastAPI backend</strong>, <strong>MongoDB</strong> for scalable data storage, and a <strong>responsive React.js frontend</strong>.',
-      'Automated user notifications via <strong>email</strong> using a <strong>Redis-backed job queue</strong> and <strong>Node.js/Express backend</strong>, ensuring seamless and timely delivery of stock updates.'
+      'Scraped inventory every <strong>10 minutes</strong> using <strong>Python & Selenium Web Driver</strong>, integrated with a <strong>multi-threaded FastAPI backend</strong>, <strong>MongoDB</strong> for scalable data storage, and a <strong>responsive React.js frontend</strong>.',
+      'Automated user notifications via <strong>email</strong> using a <strong>Redis-backed job queue</strong> and <strong>Node.js/Express backend</strong>, ensuring seamless and timely delivery of stock updates to <strong>50+</strong> active users.'
     ],
-    tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'FastAPI', 'Python', 'Selenium', 'Redis'], 
+    tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'FastAPI', 'Python', 'Selenium', 'BeautifulSoup', 'Redis', 'Multi-Threading', 'Microservices'], 
     link: 'https://amul-protein-products-notifier.onrender.com',
     github: 'https://github.com/Gaurishh/amul-protein-products-notifier'
   },
@@ -199,6 +199,6 @@ export const certifications = [
 export const skills = {
   'Languages': ['C/C++ (Most Proficient)', 'Java/Kotlin', 'Python', 'HTML', 'CSS', 'JavaScript', 'Dart', 'SQL'],
   'Frameworks & Libraries': ['React.js', 'Angular.js', 'Express.js', 'Node.js', 'Bootstrap', 'Flutter'],
-  'Tools & Libraries': ['Gradle', 'Git', 'MongoDB', 'Mongoose', 'Pandas', 'Numpy', 'Matplotlib', 'Seaborn'],
+  'Tools & Libraries': ['Gradle', 'Git', 'MongoDB', 'Mongoose', 'Pandas', 'Numpy', 'Matplotlib', 'Seaborn', 'BeautifulSoup', 'Multi-Threading', 'Microservices'],
   'Relevant Coursework': ['Machine Learning', 'Neural Networks', 'Computer Vision', 'Operating System', 'Artificial Intelligence', 'Computer Networks', 'Design and Analysis of Algorithms', 'Software Engineering', 'Object Oriented Programming', 'Database Management Systems', 'Data Structures'],
 };
