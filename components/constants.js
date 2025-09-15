@@ -115,7 +115,7 @@ export const projects = [
       'Collaborated with a <strong>3-member team</strong> to implement <strong>front-end and back-end</strong> functionalities.'
     ],
     tech: ['SQL', 'MySQL', 'Database Management', 'Team Collaboration'], 
-    link: 'https://pdfhost.io/v/dx0bRyRxc_CafeIn_Report_Final',
+    link: 'https://drive.google.com/file/d/1CiwpGPxQj2Yz7sVeAAXks_jNI3zmjAC8/view?usp=sharing',
     github: null
   },
   { 
@@ -185,7 +185,7 @@ export const certifications = [
     date: 'May 2022',
     duration: '6 months',
     description: 'Data Structures and Algorithms mastery with C++ implementation and competitive programming techniques.',
-    link: 'https://pdfhost.io/v/XwTXfQdBt_CB_Certificate'
+    link: 'https://drive.google.com/file/d/1eT25JY_VTjlISQuAxeB1Nck7eFlh6auv/view?usp=sharing'
   },
   { 
     name: 'ReactJS: The Complete Guide', 
