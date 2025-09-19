@@ -1,11 +1,11 @@
-import { Github, Linkedin, Twitter, Mail, Briefcase, User, Code, Award, Star, Phone } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, Briefcase, User, Code, Award, Star, Phone, Braces, ChartNoAxesColumn  } from 'lucide-react';
 
 export const sections = {
   about: { label: 'About Me', icon: User },
   experience: { label: 'Experience', icon: Briefcase },
   projects: { label: 'Projects', icon: Code },
   skills: { label: 'Skills & Tech Stacks', icon: Star },
-  profiles: { label: 'Coding Profiles', icon: Github },
+  profiles: { label: 'Coding Profiles', icon: ChartNoAxesColumn  },
   certifications: { label: 'Courses & Certifications', icon: Award },
   contact: { label: 'Contact', icon: Phone },
 };
@@ -21,6 +21,10 @@ export const profiles = [
 ];
 
 export const experiences = [
+  {
+    category: 'Corporate',
+    isHeader: true
+  },
   { 
     role: 'Software Engineer 1 (6M Intern + Full Time Conversion)', 
     company: 'BlackRock', 
@@ -42,6 +46,10 @@ export const experiences = [
       'Architected robust backend services and interactive front-end interfaces utilizing <strong>Angular.js</strong>, and <strong>Kotlin</strong>, optimizing loading time by approximately <strong>25%</strong> compared to the desktop-based software, with <strong>enhanced scalability</strong>.',
       'Received a <strong>6-month internship</strong> extension as a pathway to full-time conversion based on stellar performance.'
     ]
+  },
+  {
+    category: 'College',
+    isHeader: true
   },
   { 
     role: 'Research Intern', 
@@ -66,9 +74,9 @@ export const experiences = [
     period: '2021 - 2022', 
     bullets: [
       '<strong>Event Management</strong>: Managed and co-ordinated a number of events both at team and individual level.',
-      'Set the momentum for <strong>stage and street plays</strong> organized on various occasions and executed <strong>script writing</strong>, <strong>role allocation</strong>, and <strong>management</strong>.',
-      'Won <strong>cash prize</strong> in the <strong>Beatboxing</strong> and Solo Singing competition organized by NIT Delhi during its Annual techno Cultural Festival.',
-      'Participated in various <strong>nukkad naataks</strong> and <strong>street plays</strong> in college.'
+      'Executed <strong>script writing</strong>, <strong>role allocation</strong>, and <strong>management</strong> on various occassions.',
+      'Won <strong>cash prize</strong> for <strong>Beatboxing</strong> in Solo Singing competition organized by NIT Delhi during its Annual techno Cultural Festival.',
+      'Engaged in street plays, power-lifting events, and tug-of-war tournaments, building stage confidence, physical endurance, and team coordination under pressure.'
     ]
   },
 ];
@@ -123,8 +131,7 @@ export const projects = [
     bullets: [
       'Created a website for displaying, adding, and updating the books in a book-store, showcasing <strong>3 pre-existing books</strong>.',
       'Implemented <strong>CRUD operations</strong> allowing users to add, delete, and edit book listings.',
-      'Designed simple routing through <strong>4 pages</strong> for easy navigation and management of book inventory.',
-      'Ensured <strong>cross-browser compatibility</strong> and <strong>responsive design</strong>, ensuring tested functionality across <strong>5+ environments</strong>.'
+      'Designed simple routing through <strong>4 pages</strong> for easy navigation and management of book inventory.'
     ],
     tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'CRUD Operations', 'Responsive Design'], 
     link: 'https://book-shelf-4628.onrender.com/books',
