@@ -5,6 +5,7 @@ import CodeChefIcon from './CodeChefIcon';
 import GeeksforGeeksIcon from './GeeksforGeeksIcon';
 import Code360Icon from './Code360Icon';
 import CSESIcon from './CSESIcon';
+import CodolioIcon from './CodolioIcon';
 
 export const sections = {
   about: { label: 'About Me', icon: User },
@@ -17,7 +18,7 @@ export const sections = {
 };
 
 export const profiles = [
-  { name: 'Codolio', url: 'https://codolio.com/profile/GaurishS', handle: 'Compiled summary of all coding profiles', icon: Braces },
+  { name: 'Codolio', url: 'https://codolio.com/profile/GaurishS', handle: 'Compiled summary of all coding profiles', icon: CodolioIcon },
   { name: 'GitHub', url: 'https://github.com/Gaurishh', handle: 'Gaurishh (25+ Repositories)', icon: Github },
   { name: 'LeetCode', url: 'https://www.leetcode.com/GaurishS/', handle: 'GaurishS (800+ Problems, Knight Badge - Top 2.5%)', icon: LeetCodeIcon },
   { name: 'Codeforces', url: 'https://codeforces.com/profile/GaurishS', handle: 'GaurishS (350+ Problems, 1388 peak rating)', icon: CodeforcesIcon },
