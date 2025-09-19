@@ -1,4 +1,10 @@
 import { Github, Linkedin, Twitter, Mail, Briefcase, User, Code, Award, Star, Phone, Braces, ChartNoAxesColumn  } from 'lucide-react';
+import LeetCodeIcon from './LeetCodeIcon';
+import CodeforcesIcon from './CodeforcesIcon';
+import CodeChefIcon from './CodeChefIcon';
+import GeeksforGeeksIcon from './GeeksforGeeksIcon';
+import Code360Icon from './Code360Icon';
+import CSESIcon from './CSESIcon';
 
 export const sections = {
   about: { label: 'About Me', icon: User },
@@ -11,18 +17,19 @@ export const sections = {
 };
 
 export const profiles = [
-  { name: 'GitHub', url: 'https://github.com/Gaurishh', handle: 'Gaurishh (20+ Repositories)', icon: Github },
-  { name: 'LeetCode', url: 'https://www.leetcode.com/GaurishS/', handle: 'GaurishS (800+ Problems, Knight Badge - Top 2.5%)', icon: Code },
-  { name: 'Codeforces', url: 'https://codeforces.com/profile/GaurishS', handle: 'GaurishS (350+ Problems, 1388 peak rating)', icon: Code },
-  { name: 'CodeChef', url: 'https://www.codechef.com/users/gaurish_s12', handle: 'gaurish_s12 (50+ Problems, 1709 rating)', icon: Code },
-  { name: 'GeeksforGeeks', url: 'https://www.geeksforgeeks.org/user/gaurish_s12', handle: 'gaurish_s12 (150+ Problems, 490 Score)', icon: Code },
-  { name: 'CSES Problem Set', url: 'https://cses.fi/user/98779', handle: 'GaurishS (90+ Problems)', icon: Code },
-  { name: 'Naukri Code360', url: 'https://www.naukri.com/code360/profile/e6a56a68-5892-4123-88a9-2e9c24a33a19', handle: 'GaurishS (150+ Problems)', icon: Code },
+  { name: 'Codolio', url: 'https://codolio.com/profile/GaurishS', handle: 'Compiled summary of all coding profiles', icon: Braces },
+  { name: 'GitHub', url: 'https://github.com/Gaurishh', handle: 'Gaurishh (25+ Repositories)', icon: Github },
+  { name: 'LeetCode', url: 'https://www.leetcode.com/GaurishS/', handle: 'GaurishS (800+ Problems, Knight Badge - Top 2.5%)', icon: LeetCodeIcon },
+  { name: 'Codeforces', url: 'https://codeforces.com/profile/GaurishS', handle: 'GaurishS (350+ Problems, 1388 peak rating)', icon: CodeforcesIcon },
+  { name: 'Naukri Code360', url: 'https://www.naukri.com/code360/profile/e6a56a68-5892-4123-88a9-2e9c24a33a19', handle: 'GaurishS (150+ Problems)', icon: Code360Icon },
+  { name: 'GeeksforGeeks', url: 'https://www.geeksforgeeks.org/user/gaurish_s12', handle: 'gaurish_s12 (150+ Problems, 490 Score)', icon: GeeksforGeeksIcon },
+  { name: 'CSES Problem Set', url: 'https://cses.fi/user/98779', handle: 'GaurishS (90+ Problems)', icon: CSESIcon },
+  { name: 'CodeChef', url: 'https://www.codechef.com/users/gaurish_s12', handle: 'gaurish_s12 (50+ Problems, 1709 rating)', icon: CodeChefIcon }
 ];
 
 export const experiences = [
   {
-    category: 'Corporate',
+    category: 'Professional Experience',
     isHeader: true
   },
   { 
@@ -48,7 +55,7 @@ export const experiences = [
     ]
   },
   {
-    category: 'College',
+    category: 'College Experience',
     isHeader: true
   },
   { 
@@ -76,7 +83,7 @@ export const experiences = [
       '<strong>Event Management</strong>: Managed and co-ordinated a number of events both at team and individual level.',
       'Executed <strong>script writing</strong>, <strong>role allocation</strong>, and <strong>management</strong> on various occassions.',
       'Won <strong>cash prize</strong> for <strong>Beatboxing</strong> in Solo Singing competition organized by NIT Delhi during its Annual techno Cultural Festival.',
-      'Engaged in street plays, power-lifting events, and tug-of-war tournaments, building stage confidence, physical endurance, and team coordination under pressure.'
+      'Engaged in <strong>street plays</strong>, power-lifting events, and <strong>tug-of-war tournaments</strong>, building <strong>stage confidence</strong>, physical endurance, and <strong>team coordination</strong> under pressure.'
     ]
   },
 ];
