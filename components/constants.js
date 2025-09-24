@@ -83,8 +83,8 @@ export const experiences = [
     bullets: [
       '<strong>Event Management</strong>: Managed and co-ordinated a number of events both at team and individual level.',
       'Executed <strong>script writing</strong>, <strong>role allocation</strong>, and <strong>management</strong> on various occassions.'
-      // 'Won <strong>cash prize</strong> for <strong>Beatboxing</strong> in Solo Singing competition organized by NIT Delhi during its Annual techno Cultural Festival.',
-      // 'Engaged in <strong>street plays</strong>, power-lifting events, and <strong>tug-of-war tournaments</strong>, building <strong>stage confidence</strong>, physical endurance, and <strong>team coordination</strong> under pressure.'
+      'Won <strong>cash prize</strong> for <strong>Beatboxing</strong> in Solo Singing competition organized by NIT Delhi during its Annual techno Cultural Festival.',
+      'Engaged in <strong>street plays</strong>, power-lifting events, and <strong>tug-of-war tournaments</strong>, building <strong>stage confidence</strong>, physical endurance, and <strong>team coordination</strong> under pressure.'
     ]
   },
 ];
