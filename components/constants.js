@@ -104,7 +104,7 @@ export const projects = [
   { 
     name: 'Amul Protein Products Notifier', 
     bullets: [
-      'Engineered a <strong>full-stack</strong> web application designed to scale to <strong>10,000+ users</strong> that delivers <strong>real-time alerts</strong> on <strong>Amul product restocks</strong>, eliminating <strong>manual availability checks</strong> and enabling timely purchases of fast-selling items.',
+      'Engineered a <strong>scalable full-stack application</strong> that delivers <strong>real-time</strong> restock alerts for <strong>20+ products</strong> across <strong>4 cities</strong>, eliminating manual checks and enabling timely purchases.',
       'Scraped inventory every <strong>10 minutes</strong> using <strong>Python & Selenium Web Driver</strong>, integrated with a <strong>multi-threaded FastAPI backend</strong>, <strong>MongoDB</strong> for scalable data storage, and a <strong>responsive React.js frontend</strong>.',
       'Automated user notifications via <strong>email</strong> using a <strong>Redis-backed job queue</strong> and <strong>Node.js/Express backend</strong>, ensuring seamless and timely delivery of stock updates to <strong>50+</strong> active users.'
     ],

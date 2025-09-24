@@ -23,7 +23,7 @@ const AboutSection = () => (
                        Hi, I&apos;m <strong className="text-blue-400">Gaurish</strong>, a <strong>CSE</strong> graduate from <strong>NIT Delhi</strong> and a software developer passionate about building <strong>impactful</strong> digital products.
                    </p>
                    <p className="text-gray-300 leading-relaxed mt-6 text-base md:text-lg">
-                   I specialize in <strong>backend</strong> and <strong>full-stack</strong> development, with hands-on experience in the MERN stack, and building <strong>scalable systems</strong>. I&apos;ve built projects ranging from a coding discussion platform for my campus to a product restock notifier.
+                   I have strong interest in <strong>backend</strong>, <strong>full-stack</strong> and <strong>AI Engineering</strong>, with hands-on experience in the MERN stack, and building <strong>scalable systems</strong>. I&apos;ve built projects ranging from a coding discussion platform for my campus to a product restock notifier.
                    </p>
                    <p className="text-gray-300 leading-relaxed mt-6 text-base md:text-lg">
                        I thrive on solving complex problems (1500+ DSA/CP problems solved, <strong>2010</strong> rating on <strong>LeetCode</strong>) and am now channeling that same drive into designing robust backend systems and impactful applications.
