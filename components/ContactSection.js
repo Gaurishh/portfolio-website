@@ -86,13 +86,6 @@ const ContactSection = () => {
                 <p className="text-lg text-gray-300 mb-4">
                     I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out!
                 </p>
-                <div className="bg-gray-700/50 p-4 rounded-lg">
-                    <h3 className="text-lg font-semibold text-white mb-3">Contact Information</h3>
-                    <div className="space-y-2 text-gray-300">
-                                                 <p><strong>Email:</strong> {emailjsConfig.templateParams.to_email}</p>
-                         <p><strong>Location:</strong> Gurgaon</p>
-                    </div>
-                </div>
             </div>
             
             {submitStatus === 'success' && (
