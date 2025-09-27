@@ -135,6 +135,17 @@ export const projects = [
     github: 'https://github.com/Gaurishh/coursera-scraper'
   },
   { 
+    name: 'Inciteful Time Tracker',
+    bullets: [
+      'Architected a comprehensive employee monitoring system featuring a <strong>cross-platform desktop app (Electron)</strong> and a <strong>web admin dashboard</strong> using the <strong>MERN stack</strong>, enabling real-time time tracking, task management, and automated activity monitoring.',
+      'Engineered a secure, cross-platform desktop application with <strong>Electron</strong> and <strong>React/Redux</strong>, implementing a local <strong>HTTP server</strong> to accept remote screenshot requests from the admin dashboard and tracking user <strong>IP/MAC addresses</strong> for enhanced device security.',
+      'Designed a scalable backend API using <strong>Node.js</strong> and <strong>MongoDB</strong> with a modular architecture, implementing secure authentication with <strong>JWT</strong> and <strong>bcryptjs hashing</strong>. Optimized the screenshot pipeline via <strong>Cloudinary\'s CDN</strong>, achieving an <strong>80% image compression ratio</strong> and ensuring fast global access to monitoring data.'
+    ],
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Electron', 'Redux', 'Cloudinary', 'JWT'],
+    link: 'https://inciteful-webapp.onrender.com/signin',
+    github: 'https://github.com/Gaurishh/inciteful'
+  },
+  { 
     name: 'Cafe In Website', 
     bullets: [
       'Spearheaded the <strong>database modeling process</strong>, leading <strong>team brainstorming sessions</strong> and iterating on <strong>several ER diagrams</strong> to finalize a scalable and optimized schema.',
