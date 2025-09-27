@@ -14,7 +14,7 @@ const AboutSection = () => (
                      width={512}
                      height={512}
                      className="rounded-full w-64 h-64 xl:w-[28rem] xl:h-[28rem] border-4 border-gray-700 object-cover"
-                    style={{ objectPosition: 'center 50%' }}
+                    style={{ objectPosition: 'center 80%' }}
                      priority
                  />
              </div>
