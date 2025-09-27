@@ -9,9 +9,9 @@ const CertificationsSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {certifications.map((cert, index) => (
                     <div key={index} className="bg-gray-700/50 p-6 rounded-lg hover:shadow-blue-500/20 shadow-lg transition-shadow">
-                        <div className="flex items-center mb-4">
-                            <Award className="text-blue-400 mr-3" size={24} />
-                            <h3 className="text-lg font-semibold text-white">{cert.name}</h3>
+                        <div className="flex items-start mb-4">
+                            <Award className="text-blue-400 mr-3 flex-shrink-0" size={28} />
+                            <h3 className="text-lg font-semibold text-white leading-tight">{cert.name}</h3>
                         </div>
                         <div className="space-y-2">
                             <p className="text-gray-300 text-sm">

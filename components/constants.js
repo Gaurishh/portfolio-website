@@ -124,6 +124,17 @@ export const projects = [
     github: 'https://github.com/Gaurishh/flutter_nitd-codes-app'
   },
   { 
+    name: 'AI-powered Lead Generation Pipeline', 
+    bullets: [
+      'Engineered an <strong>end-to-end AI lead generation pipeline</strong> using <strong>Google Places API</strong> and <strong>Gemini 2.5 Flash</strong> to automatically discover, classify, and extract data from <strong>327 institutions</strong> across two major cities, delivering <strong>86% qualified leads</strong> for targeted course recommendations.',
+      'Architected a <strong>multithreaded web crawling system</strong> with connection pooling and iterative BFS algorithms, processing <strong>268 websites</strong> and boosting data collection efficiency by <strong>40%</strong> while implementing domain failure tracking to ensure reliability.',
+      'Deployed a <strong>dual-stage AI process</strong> using Gemini 2.5 Flash with course-aware prompts to first classify institutions with detailed reasoning and then extract over <strong>1,200 key contacts</strong> into structured JSON, achieving <strong>95% accuracy</strong>.'
+    ],
+    tech: ['Python', 'Google Places API', 'Google Gemini 2.5 Flash', 'BeautifulSoup4', 'pandas', 'Multithreading', 'Web Scraping', 'AI/ML'], 
+    link: 'https://github.com/Gaurishh/coursera-scraper/tree/main/output',
+    github: 'https://github.com/Gaurishh/coursera-scraper'
+  },
+  { 
     name: 'Cafe In Website', 
     bullets: [
       'Spearheaded the <strong>database modeling process</strong>, leading <strong>team brainstorming sessions</strong> and iterating on <strong>several ER diagrams</strong> to finalize a scalable and optimized schema.',
@@ -149,6 +160,14 @@ export const projects = [
 ];
 
 export const certifications = [
+  { 
+    name: 'FastAPI - The Complete Course 2025 (Beginner + Advanced)', 
+    issuer: 'Udemy', 
+    date: 'September 2025',
+    duration: '21.5 hours',
+    description: 'Build and deploy production-ready RESTful APIs and full-stack applications with FastAPI. This course covers everything from the basics to advanced topics like database integration, authentication with JWT, and deployment.',
+    link: 'https://www.udemy.com/certificate/UC-d8df9348-1382-4a45-936d-c651e41c96e5'
+  },
   { 
     name: 'Mastering System Design', 
     issuer: 'Udemy', 
@@ -215,5 +234,5 @@ export const skills = {
   'Languages': ['C/C++ (Most Proficient)', 'Java/Kotlin', 'Python', 'HTML', 'CSS', 'JavaScript', 'Dart', 'SQL'],
   'Frameworks & Libraries': ['React.js', 'Angular.js', 'Express.js', 'Node.js', 'Bootstrap', 'Flutter'],
   'Tools & Libraries': ['Gradle', 'Git', 'MongoDB', 'Mongoose', 'Pandas', 'Numpy', 'Matplotlib', 'Seaborn', 'BeautifulSoup', 'Multi-Threading', 'Microservices'],
-  'Relevant Coursework': ['Machine Learning', 'Neural Networks', 'Computer Vision', 'Operating System', 'Artificial Intelligence', 'Computer Networks', 'Design and Analysis of Algorithms', 'Software Engineering', 'Object Oriented Programming', 'Database Management Systems', 'Data Structures'],
+  'Relevant Coursework': ['Operating System', 'Computer Networks', 'Object Oriented Programming', 'Database Management Systems', 'Data Structures', 'Design and Analysis of Algorithms', 'Software Engineering', 'Artificial Intelligence', 'Machine Learning', 'Neural Networks', 'Computer Vision', 'Data Mining'],
 };
