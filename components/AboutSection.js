@@ -26,7 +26,7 @@ const AboutSection = () => (
                    I have strong interest in <strong>backend</strong>, <strong>full-stack</strong> and <strong>AI Engineering</strong>, with hands-on experience in the MERN stack, and building <strong>scalable systems</strong>. I&apos;ve built projects ranging from a coding discussion platform for my campus to a product restock notifier.
                    </p>
                    <p className="text-gray-300 leading-relaxed mt-6 text-base md:text-lg">
-                       I thrive on solving complex problems (1500+ DSA/CP problems solved, <strong>2010</strong> rating on <strong>LeetCode</strong>) and am now channeling that same drive into designing robust backend systems and impactful applications.
+                       I thrive on solving complex problems (1500+ DSA/CP problems solved, <strong>2010</strong> rating on <strong>LeetCode</strong>) and am now channeling that same drive into building with AI, designing robust backend systems and creating impactful applications.
                    </p>
                    <p className="text-gray-300 leading-relaxed mt-6 text-base md:text-lg">
                        When I&apos;m not working, you&apos;ll usually find me drinking coffee, exploring new technologies, competing in coding contests, or brainstorming product ideas that simplify everyday life.
