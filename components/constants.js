@@ -126,7 +126,7 @@ export const projects = [
   { 
     name: 'AI-powered Lead Generation Pipeline', 
     bullets: [
-      'Engineered an <strong>end-to-end AI lead generation pipeline</strong> using <strong>Google Places API</strong> and <strong>Gemini 2.5 Flash</strong> to automatically discover, classify, and extract data from <strong>327 institutions</strong> across two major cities, delivering <strong>86% qualified leads</strong> for targeted course recommendations.',
+      'Built an AI-powered lead generation pipeline to automate the <strong>entire process</strong> for <strong>course-selling platforms</strong>, from finding potential clients to extracting the right contact information.',
       'Architected a <strong>multithreaded web crawling system</strong> with connection pooling and iterative BFS algorithms, processing <strong>268 websites</strong> and boosting data collection efficiency by <strong>40%</strong> while implementing domain failure tracking to ensure reliability.',
       'Deployed a <strong>dual-stage AI process</strong> using Gemini 2.5 Flash with course-aware prompts to first classify institutions with detailed reasoning and then extract over <strong>1,200 key contacts</strong> into structured JSON, achieving <strong>95% accuracy</strong>.'
     ],
