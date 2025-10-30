@@ -161,6 +161,14 @@ export const projects = [
 
 export const certifications = [
   { 
+    name: 'LLM Engineering: Master AI, Large Language Models & Agents', 
+    issuer: 'Udemy', 
+    date: 'October 2025',
+    duration: '41.5 hours',
+    description: 'Comprehensive course on building and deploying advanced Generative AI applications. Covers mastering LLMs and AI Agents using frameworks like LangChain and HuggingFace, and advanced techniques including RAG and QLoRA fine-tuning.',
+    link: 'https://www.udemy.com/certificate/UC-d8df9348-1382-4a45-936d-c651e41c96e5'
+  },
+  { 
     name: 'FastAPI - The Complete Course 2025 (Beginner + Advanced)', 
     issuer: 'Udemy', 
     date: 'September 2025',
