@@ -133,41 +133,7 @@ export const projects = [
     tech: ['Python', 'Google Places API', 'Google Gemini 2.5 Flash', 'BeautifulSoup4', 'pandas', 'Multithreading', 'Web Scraping', 'AI/ML'], 
     link: 'https://github.com/Gaurishh/coursera-scraper/tree/main/output',
     github: 'https://github.com/Gaurishh/coursera-scraper'
-  },
-  { 
-    name: 'Inciteful Time Tracker',
-    bullets: [
-      'Architected a comprehensive employee monitoring system featuring a <strong>cross-platform desktop app (Electron)</strong> and a <strong>web admin dashboard</strong> using the <strong>MERN stack</strong>, enabling real-time time tracking, task management, and automated activity monitoring.',
-      'Engineered a secure, cross-platform desktop application with <strong>Electron</strong> and <strong>React/Redux</strong>, implementing a local <strong>HTTP server</strong> to accept remote screenshot requests from the admin dashboard and tracking user <strong>IP/MAC addresses</strong> for enhanced device security.',
-      'Designed a scalable backend API using <strong>Node.js</strong> and <strong>MongoDB</strong> with a modular architecture, implementing secure authentication with <strong>JWT</strong> and <strong>bcryptjs hashing</strong>. Optimized the screenshot pipeline via <strong>Cloudinary\'s CDN</strong>, achieving an <strong>80% image compression ratio</strong> and ensuring fast global access to monitoring data.'
-    ],
-    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Electron', 'Redux', 'Cloudinary', 'JWT'],
-    link: 'https://inciteful-webapp.onrender.com/signin',
-    github: 'https://github.com/Gaurishh/inciteful'
-  },
-  { 
-    name: 'Cafe In Website', 
-    bullets: [
-      'Spearheaded the <strong>database modeling process</strong>, leading <strong>team brainstorming sessions</strong> and iterating on <strong>several ER diagrams</strong> to finalize a scalable and optimized schema.',
-      'Managed solely the <strong>Database Management System (DBMS)</strong> for the website using <strong>MySQL</strong>, implementing <strong>50+ basic, intermediate, and advanced SQL queries</strong>.',
-      'Collaborated with a <strong>3-member team</strong> to implement <strong>front-end and back-end</strong> functionalities of the website.'
-    ],
-    tech: ['SQL', 'MySQL', 'Database Management', 'Team Collaboration'], 
-    link: 'https://drive.google.com/file/d/1CiwpGPxQj2Yz7sVeAAXks_jNI3zmjAC8/view?usp=sharing',
-    github: null
-  },
-  { 
-    name: 'BookShelf', 
-    bullets: [
-      'Created a website for displaying, adding, and updating the books in a book-store, showcasing <strong>3 pre-existing books</strong>.',
-      'Implemented <strong>CRUD operations</strong> allowing users to add, delete, and edit book listings.',
-      'Designed simple routing through <strong>4 pages</strong> for easy navigation and management of book inventory.'
-    ],
-    tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'CRUD Operations', 'Responsive Design'], 
-    link: 'https://book-shelf-4628.onrender.com/books',
-    github: 'https://github.com/Gaurishh/book-shelf',
-    backend: 'https://github.com/Gaurishh/book-shelf-backend'
-  },
+  }
 ];
 
 export const certifications = [
