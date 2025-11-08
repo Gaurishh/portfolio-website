@@ -145,18 +145,6 @@ export const projects = [
     link: 'https://drive.google.com/file/d/1CiwpGPxQj2Yz7sVeAAXks_jNI3zmjAC8/view?usp=sharing',
     github: null
   },
-  { 
-    name: 'BookShelf', 
-    bullets: [
-      'Created a website for displaying, adding, and updating the books in a book-store, showcasing <strong>3 pre-existing books</strong>.',
-      'Implemented <strong>CRUD operations</strong> allowing users to add, delete, and edit book listings.',
-      'Designed simple routing through <strong>4 pages</strong> for easy navigation and management of book inventory.'
-    ],
-    tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'CRUD Operations', 'Responsive Design'], 
-    link: 'https://book-shelf-4628.onrender.com/books',
-    github: 'https://github.com/Gaurishh/book-shelf',
-    backend: 'https://github.com/Gaurishh/book-shelf-backend'
-  },
 ];
 
 export const certifications = [
