@@ -31,16 +31,28 @@ export default function App() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 100; // Offset for better detection
+
+      const contactRef = sectionRefs.current['contact'];
+      if (contactRef) {
+        const contactRect = contactRef.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const visibleHeight =
+          Math.min(contactRect.bottom, viewportHeight) - Math.max(contactRect.top, 0);
+        const contactVisibleRatio =
+          Math.max(0, visibleHeight) / Math.max(contactRect.height, 1);
+
+        if (contactVisibleRatio >= 0.5) {
+          if (activeSection !== 'contact') {
+            setActiveSection('contact');
+          }
+          return;
+        }
+      }
       
       // Find which section is currently in view
       const currentSection = Object.entries(sectionRefs.current).find(([key, ref]) => {
-        if (!ref) return false;
+        if (!ref || key === 'contact') return false;
         const rect = ref.getBoundingClientRect();
-        
-        // Special handling for the last section (contact)
-        if (key === 'contact') {
-          return rect.top <= 100;
-        }
         
         return rect.top <= 100 && rect.bottom >= 100;
       });
