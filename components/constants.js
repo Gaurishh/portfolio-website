@@ -133,6 +133,17 @@ export const projects = [
     tech: ['Python', 'Google Places API', 'Google Gemini 2.5 Flash', 'BeautifulSoup4', 'pandas', 'Multithreading', 'Web Scraping', 'AI/ML'], 
     link: 'https://github.com/Gaurishh/coursera-scraper/tree/main/output',
     github: 'https://github.com/Gaurishh/coursera-scraper'
+  },
+  { 
+    name: 'DBMS: Cafe In Website', 
+    bullets: [
+      'Spearheaded the <strong>database modeling process</strong>, leading <strong>team brainstorming sessions</strong> and iterating on <strong>several ER diagrams</strong> to finalize a scalable and optimized schema.',
+      'Managed solely the <strong>Database Management System (DBMS)</strong> for the website using <strong>MySQL</strong>, implementing <strong>50+ basic, intermediate, and advanced SQL queries</strong>.',
+      'Collaborated with a <strong>3-member team</strong> to implement <strong>front-end and back-end</strong> functionalities of the website.'
+    ],
+    tech: ['SQL', 'MySQL', 'Database Management', 'Team Collaboration'], 
+    link: 'https://drive.google.com/file/d/1CiwpGPxQj2Yz7sVeAAXks_jNI3zmjAC8/view?usp=sharing',
+    github: null
   }
 ];
 
