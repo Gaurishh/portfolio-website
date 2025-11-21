@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Code } from 'lucide-react';
+import { Code, Github } from 'lucide-react';
 import SectionCard from './SectionCard';
 import { projects } from './constants';
 
@@ -42,12 +42,12 @@ const ProjectsSection = () => {
                                 In-use by the bakery
                             </div>
                         )}
-                        
+
                         {/* Technology tags */}
                         <div className="flex flex-wrap gap-2 mb-4" suppressHydrationWarning>
                             {project.tech.map(t => <span key={t} className="bg-blue-900/50 text-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full">{t}</span>)}
                         </div>
-                        
+
                         <div className="text-gray-300 flex-grow mb-4 space-y-2">
                             {project.bullets ? (
                                 project.bullets.map((bullet, index) => (
@@ -62,6 +62,18 @@ const ProjectsSection = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            <div className="mt-8 text-center">
+                <a
+                    href="https://github.com/Gaurishh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-gray-800 text-white font-bold text-lg rounded-lg hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-gray-500/25 transform hover:scale-105 border border-gray-700"
+                >
+                    <Github className="w-5 h-5 mr-2" />
+                    View all projects on Github
+                </a>
             </div>
         </SectionCard>
     );
