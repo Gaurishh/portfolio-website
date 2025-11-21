@@ -1,52 +1,110 @@
 import React from 'react';
 import Image from 'next/image';
-import { User } from 'lucide-react';
-import SectionCard from './SectionCard';
+import { User, ChevronRight, Download } from 'lucide-react';
 
-const AboutSection = () => (
-    <SectionCard title="About Me" icon={User}>
-        <div className="flex flex-col items-center justify-center min-h-[calc(100vh-12rem)] w-full px-6 md:px-12">
-            <div className="flex flex-col xl:flex-row items-center mb-8">
-                <div className="mb-8 xl:mb-0 xl:mr-10 flex-shrink-0">
-                    <Image
-                        src="/profile-photo.jpg"
-                        alt="Your Name - Software Engineer"
-                        width={512}
-                        height={512}
-                        className="rounded-full w-64 h-64 xl:w-[28rem] xl:h-[28rem] border-4 border-gray-700 object-cover"
-                        style={{ objectPosition: 'center 80%' }}
-                        priority
-                    />
-                </div>
-                <div className="text-center xl:text-left max-w-xl">
-                    <p className="text-gray-300 leading-relaxed text-base md:text-lg">
-                        Hi, I&apos;m <strong className="text-blue-400">Gaurish</strong>, a <strong>CSE</strong> graduate from <strong>NIT Delhi</strong> and a software developer passionate about building <strong>impactful</strong> digital products.
-                    </p>
-                    <p className="text-gray-300 leading-relaxed mt-6 text-base md:text-lg">
-                        I have strong interest in <strong>backend</strong>, <strong>full-stack</strong> and <strong>Applied AI Engineering</strong>, with hands-on experience in the MERN stack, and building <strong>scalable systems</strong>. I&apos;ve built projects ranging from a coding discussion platform for my campus to an end-to-end solution for a local bakery.
-                    </p>
-                    <p className="text-gray-300 leading-relaxed mt-6 text-base md:text-lg">
-                        I thrive on solving complex problems (1500+ DSA/CP problems solved, <strong>2010</strong> rating on <strong>LeetCode</strong>) and am now channeling that same drive into building with AI, designing robust backend systems and creating impactful applications.
-                    </p>
-                    <p className="text-gray-300 leading-relaxed mt-6 text-base md:text-lg">
-                        When I&apos;m not working, you&apos;ll usually find me listening to music, learning something new or spending time with friends/family.
-                    </p>
+const AboutSection = () => {
+    return (
+        <div className="w-full flex flex-col">
+            {/* Part 1: Brief Opinion / Hero-like Intro - Occupies full screen */}
+            <div className="min-h-screen flex items-center justify-center w-full py-12 md:py-0">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-10 px-6 md:px-12 max-w-7xl mx-auto w-full">
+                    {/* Text Content */}
+                    <div className="space-y-6 max-w-2xl order-2 md:order-1">
+
+                        <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight -ml-1">
+                            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Gaurish</span>
+                        </h1>
+
+                        <h2 className="text-xl md:text-2xl text-gray-400 font-medium">
+                            Software & Applied AI Engineer
+                        </h2>
+
+                        <p className="text-gray-400 text-lg leading-relaxed">
+                            Product-minded Developer with a passion for problem-solving and collaborating to build impactful digital solutions.
+                        </p>
+                        <p className="text-gray-400 text-lg leading-relaxed">
+                            Highly curious about designing robust Backend Systems & Applied AI Engineering, do checkout my recent projects and completed coursework!
+                        </p>
+
+
+                    </div>
+
+                    {/* Image */}
+                    <div className="order-1 md:order-2 flex justify-center relative">
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-blue-500/20 rounded-full blur-[100px]"></div>
+                        <div className="relative w-80 h-80 md:w-[30rem] md:h-[30rem] rounded-full p-1 bg-gradient-to-br from-gray-700 to-gray-900 overflow-hidden border border-gray-700 shadow-2xl">
+                            <Image
+                                src="/profile-photo.jpg"
+                                alt="Gaurish Sood"
+                                width={800}
+                                height={800}
+                                className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-500"
+                                style={{ objectPosition: 'center 80%' }}
+                                priority
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="w-full text-center">
-                <a
-                    href="https://drive.google.com/uc?export=download&id=1x_G-w1sDbA2iDv3ea9Q4cJzVkhpjrizF"
-                    download="Gaurish_Sood_Resume.pdf"
-                    className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-bold text-lg rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/25 transform hover:scale-105"
-                >
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                    </svg>
-                    Resume
-                </a>
+
+            {/* Part 2: Detailed Overview - Appears on scroll */}
+            <div className="w-full py-20 bg-gray-900/30">
+                <div className="max-w-6xl mx-auto px-6 md:px-12 w-full">
+                    <div className="bg-gray-800/50 p-8 md:p-10 rounded-2xl border border-gray-700/50 shadow-xl backdrop-blur-sm">
+                        <div className="flex flex-col md:flex-row gap-12 items-start">
+                            {/* Detailed Text */}
+                            <div className="flex-1 space-y-6 text-lg text-gray-300 leading-relaxed">
+                                <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                                    <User className="text-blue-400" /> About Me
+                                </h3>
+                                <p>
+                                    I&apos;m a <strong>CSE</strong> graduate from <strong>NIT Delhi</strong> and have solved over 1500+ DSA/CP questions, achieving a <strong className="text-blue-400">2010 rating on LeetCode</strong> & <strong className="text-blue-400">1426 on Codeforces</strong>.
+                                </p>
+                                <p>
+                                    Now, I'm channelling that same drive into building with AI, designing robust backend systems and creating impactful applications.
+                                </p>
+                                <p>
+                                    When I&apos;m not working, you&apos;ll usually find me listening to music, learning something new or spending time with friends/family.
+                                </p>
+
+                                <div className="pt-4">
+                                    <a
+                                        href="https://drive.google.com/uc?export=download&id=1x_G-w1sDbA2iDv3ea9Q4cJzVkhpjrizF"
+                                        download="Gaurish_Sood_Resume.pdf"
+                                        className="inline-flex items-center px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white font-bold rounded-lg transition-all border border-gray-600 hover:border-blue-400"
+                                    >
+                                        <Download className="w-5 h-5 mr-2" />
+                                        Download Resume
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/* Stats Grid */}
+                            <div className="w-full md:w-1/3 grid grid-cols-2 gap-4">
+                                <div className="bg-gray-900/80 p-4 rounded-xl text-center border border-gray-800 hover:border-blue-500/30 transition-colors">
+                                    <div className="text-3xl font-bold text-blue-400 mb-1">1.5k+</div>
+                                    <div className="text-xs text-gray-500 uppercase tracking-wider">DSA Problems</div>
+                                </div>
+                                <div className="bg-gray-900/80 p-4 rounded-xl text-center border border-gray-800 hover:border-blue-500/30 transition-colors">
+                                    <div className="text-3xl font-bold text-blue-400 mb-1">4+</div>
+                                    <div className="text-xs text-gray-500 uppercase tracking-wider">Years Coding</div>
+                                </div>
+                                <div className="bg-gray-900/80 p-4 rounded-xl text-center border border-gray-800 col-span-2 hover:border-blue-500/30 transition-colors">
+                                    <div className="text-3xl font-bold text-blue-400 mb-1">Top 2.5%</div>
+                                    <div className="text-xs text-gray-500 uppercase tracking-wider">LeetCode Knight</div>
+                                </div>
+                                <div className="bg-gray-900/80 p-4 rounded-xl text-center border border-gray-800 col-span-2 hover:border-blue-500/30 transition-colors">
+                                    <div className="text-3xl font-bold text-blue-400 mb-1">30+</div>
+                                    <div className="text-xs text-gray-500 uppercase tracking-wider">Github Repositories</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </SectionCard>
-);
+    );
+};
 
 export default AboutSection;
+

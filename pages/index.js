@@ -48,12 +48,12 @@ export default function App() {
           return;
         }
       }
-      
+
       // Find which section is currently in view
       const currentSection = Object.entries(sectionRefs.current).find(([key, ref]) => {
         if (!ref || key === 'contact') return false;
         const rect = ref.getBoundingClientRect();
-        
+
         return rect.top <= 100 && rect.bottom >= 100;
       });
 
@@ -70,7 +70,7 @@ export default function App() {
   // Throttle function for performance
   const throttle = (func, limit) => {
     let inThrottle;
-    return function() {
+    return function () {
       const args = arguments;
       const context = this;
       if (!inThrottle) {
@@ -84,15 +84,15 @@ export default function App() {
   // Smooth scroll to section
   const scrollToSection = (sectionKey) => {
     setIsScrolling(true);
-    
+
     const targetRef = sectionRefs.current[sectionKey];
     if (targetRef) {
-      targetRef.scrollIntoView({ 
+      targetRef.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
     }
-    
+
     // Reset scrolling flag after animation
     setTimeout(() => setIsScrolling(false), 1000);
   };
@@ -110,40 +110,40 @@ export default function App() {
       </Head>
       <div className="bg-gray-900 text-gray-200 font-sans antialiased">
         <GlobalStyles />
-      <div className="flex flex-col md:flex-row min-h-screen">
-        <Sidebar 
-          activeSection={activeSection} 
-          setActiveSection={setActiveSection} 
-          sections={sections} 
-          isMobile={isMobile}
-          onSectionClick={scrollToSection}
-        />
-        <main className="flex-1 md:ml-64 lg:ml-72 transition-all duration-300">
-          <div className="space-y-0 w-full">
-            <div ref={(ref) => setSectionRef('about', ref)} className="min-h-screen flex items-center w-full">
-              <AboutSection />
+        <div className="flex flex-col md:flex-row min-h-screen">
+          <Sidebar
+            activeSection={activeSection}
+            setActiveSection={setActiveSection}
+            sections={sections}
+            isMobile={isMobile}
+            onSectionClick={scrollToSection}
+          />
+          <main className="flex-1 md:ml-64 lg:ml-72 transition-all duration-300">
+            <div className="space-y-0 w-full">
+              <div id="about" ref={(ref) => setSectionRef('about', ref)} className="min-h-screen flex items-center w-full">
+                <AboutSection />
+              </div>
+              <div id="experience" ref={(ref) => setSectionRef('experience', ref)} className="pt-20">
+                <ExperienceSection />
+              </div>
+              <div id="projects" ref={(ref) => setSectionRef('projects', ref)} className="pt-20">
+                <ProjectsSection />
+              </div>
+              <div id="skills" ref={(ref) => setSectionRef('skills', ref)} className="pt-20">
+                <SkillsSection />
+              </div>
+              <div id="profiles" ref={(ref) => setSectionRef('profiles', ref)} className="pt-20">
+                <ProfilesSection />
+              </div>
+              <div id="certifications" ref={(ref) => setSectionRef('certifications', ref)} className="pt-20">
+                <CertificationsSection />
+              </div>
+              <div id="contact" ref={(ref) => setSectionRef('contact', ref)} className="pt-20 pb-32">
+                <ContactSection />
+              </div>
             </div>
-            <div ref={(ref) => setSectionRef('experience', ref)} className="pt-20">
-              <ExperienceSection />
-            </div>
-            <div ref={(ref) => setSectionRef('projects', ref)} className="pt-20">
-              <ProjectsSection />
-            </div>
-            <div ref={(ref) => setSectionRef('skills', ref)} className="pt-20">
-              <SkillsSection />
-            </div>
-            <div ref={(ref) => setSectionRef('profiles', ref)} className="pt-20">
-              <ProfilesSection />
-            </div>
-            <div ref={(ref) => setSectionRef('certifications', ref)} className="pt-20">
-              <CertificationsSection />
-            </div>
-            <div ref={(ref) => setSectionRef('contact', ref)} className="pt-20 pb-32">
-              <ContactSection />
-            </div>
-          </div>
-        </main>
-      </div>
+          </main>
+        </div>
       </div>
     </>
   );
