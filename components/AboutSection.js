@@ -12,7 +12,7 @@ const AboutSection = () => {
                     <div className="space-y-6 max-w-2xl order-2 md:order-1">
 
                         <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight -ml-1">
-                            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Gaurish</span>
+                            Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Gaurish</span>
                         </h1>
 
                         <h2 className="text-xl md:text-2xl text-gray-400 font-medium">
@@ -61,7 +61,7 @@ const AboutSection = () => {
                                     I&apos;m a <strong>CSE</strong> graduate from <strong>NIT Delhi</strong> and have solved over 1500+ DSA/CP questions, achieving a <strong className="text-blue-400">2010 rating on LeetCode</strong> & <strong className="text-blue-400">1426 on Codeforces</strong>.
                                 </p>
                                 <p>
-                                    Now, I'm channelling that same drive into building with AI, designing robust backend systems and creating impactful applications.
+                                    Now, I&apos;m channelling that same drive into building with AI, designing robust backend systems and creating impactful applications.
                                 </p>
                                 <p>
                                     When I&apos;m not working, you&apos;ll usually find me listening to music, learning something new or spending time with friends/family.
