@@ -149,6 +149,14 @@ export const projects = [
 
 export const certifications = [
   { 
+    name: 'Agentic AI Engineering: Master Agentic Frameworks & MCP Servers', 
+    issuer: 'Udemy', 
+    date: 'November 2025',
+    duration: '17 hours',
+    description: 'Comprehensive course on building sophisticated AI agent systems using cutting-edge frameworks. Covers LangGraph for stateful agent workflows, MCP Servers for tool integration, OpenAI Agents SDK, n8n for workflow automation, CrewAI and Autogen for multi-agent systems, and advanced techniques for orchestrating complex AI agent architectures.',
+    link: 'https://www.udemy.com/certificate/UC-c6b9ba40-cb2a-428b-9d74-71e1a368858c/'
+  },
+  { 
     name: 'LLM Engineering: Master AI, Large Language Models & Agents', 
     issuer: 'Udemy', 
     date: 'October 2025',
