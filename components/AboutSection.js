@@ -23,7 +23,7 @@ const AboutSection = () => {
                             Product-minded Developer with a passion for problem-solving and collaborating to build impactful digital solutions.
                         </p>
                         <p className="text-gray-400 text-lg leading-relaxed">
-                            Highly passionate about Backend & Applied AI Engineering, do checkout my recent projects, professional experience and completed coursework!
+                            Focused on Backend & Applied AI Engineering, do checkout my recent projects, professional experience and completed coursework!
                         </p>
 
 
