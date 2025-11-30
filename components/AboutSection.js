@@ -69,7 +69,7 @@ const AboutSection = () => {
 
                                 <div className="pt-4">
                                     <a
-                                        href="https://drive.google.com/uc?export=download&id=1x_G-w1sDbA2iDv3ea9Q4cJzVkhpjrizF"
+                                        href="https://drive.google.com/uc?export=download&id=1kYJuXjatx9RIY6V3ZLvVx1yr_paHiSEX"
                                         download="Gaurish_Sood_Resume.pdf"
                                         className="inline-flex items-center px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white font-bold rounded-lg transition-all border border-gray-600 hover:border-blue-400"
                                     >
