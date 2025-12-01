@@ -34,12 +34,23 @@ export const experiences = [
     isHeader: true
   },
   {
-    role: 'Software Engineer 1 (6M Intern + Full Time Conversion)',
+    role: 'Analyst (Engineer 1)',
     company: 'BlackRock',
-    period: 'Jan 2025 - Present',
+    period: 'Jul 2025 - Present',
     bullets: [
+      'Diagnosed <strong>read-overload</strong> in the data fan-out server by analyzing <strong>Prometheus/Grafana metrics</strong> to identify high-traffic “problematic clients,” and designed a <strong>scalable dual-write architecture</strong>—modifying all upstream components to write selectively to both the primary table and a new <strong>dual_write table</strong> after <strong>feasibility analysis</strong> of production data volumes—significantly <strong>reducing DB retrieval latency</strong>.',
       'Migrated event processing to the <strong>event-driven fanout server</strong> (BMSNetworkFanout), which pushed filtered updates, centralizing incoming event processing and replacing redundant polling jobs, which streamlined data delivery across systems and improved system response time by <strong>97%</strong>.',
       'Built a <strong>self-correcting</strong> LLM-based tool for <strong>Natural Language to SQL conversion</strong> that achieved <strong>90%+</strong> accuracy by leveraging <strong>Chain-of-Thought prompting</strong>, <strong>few-shot examples</strong>, and <strong>full schema context</strong>, cutting data retrieval time by <strong>50%</strong>.',
+      'Researched <strong>Sybase’s internal time-clocking</strong> and <strong>SQL logging mechanisms</strong> and replicated equivalent behavior in the <strong>migrated MySQL server</strong> to ensure <strong>consistent query-execution tracking</strong> across platforms.',
+      'Designed and implemented a <strong>multithreaded DBPool</strong> for team\'s <strong>IndexWriteServer</strong>, enabling <strong>efficient reuse and management</strong> of pre-established database connections across server processes after conducting a <strong>feasibility analysis</strong> that demonstrated <strong>multithreading’s advantages</strong> over multiprocessing for connection handling.',
+      'Used <strong>Python’s pdb debugger</strong> for <strong>deep-dive debugging</strong> and wrote <strong>comprehensive unit tests</strong> covering <strong>edge cases</strong> across <strong>8 python scripts</strong>, significantly <strong>improving reliability</strong> and <strong>defect detection</strong>.'
+    ]
+  },
+  {
+    role: 'Data & Software Engineering Intern',
+    company: 'BlackRock',
+    period: 'Jan 2025 - Jun 2025',
+    bullets: [
       'Built a <strong>RAG-powered chatbot</strong> using <strong>OpenAI API</strong> and <strong>FAISS Vector Database</strong> to answer internal queries by indexing <strong>15</strong> wiki pages and PDFs, reducing documentation lookup time by <strong>70%</strong> and accelerating team onboarding by <strong>40%</strong>.',
       'Automated the comparison of pre- and post-modification snapshots through python scripts, detecting anomalies with <strong>100%</strong> accuracy and reducing issue detection time by <strong>60%</strong>.',
       'Programmed an automated sensitive stock detection system with SQL and Jinja templates, reducing manual reviews by <strong>90%</strong>; ensured accuracy by writing <strong>20+</strong> comprehensive unit tests with <strong>99%</strong> coverage.',
