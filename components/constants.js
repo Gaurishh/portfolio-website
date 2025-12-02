@@ -51,7 +51,7 @@ export const experiences = [
     company: 'BlackRock',
     period: 'Jan 2025 - Jun 2025',
     bullets: [
-      'Built a <strong>RAG-powered chatbot</strong> using <strong>OpenAI API</strong> and <strong>FAISS Vector Database</strong> to answer internal queries by indexing <strong>15</strong> wiki pages and PDFs, reducing documentation lookup time by <strong>70%</strong> and accelerating team onboarding by <strong>40%</strong>.',
+      'Built a <strong>RAG-powered GenAI chatbot</strong> using <strong>FAISS Vector Database</strong> to answer internal queries by indexing <strong>15</strong> wiki pages and PDFs, reducing documentation lookup time by <strong>70%</strong> and accelerating team onboarding by <strong>40%</strong>.',
       'Automated the comparison of pre- and post-modification snapshots through python scripts, detecting anomalies with <strong>100%</strong> accuracy and reducing issue detection time by <strong>60%</strong>.',
       'Programmed an automated sensitive stock detection system with SQL and Jinja templates, reducing manual reviews by <strong>90%</strong>; ensured accuracy by writing <strong>20+</strong> comprehensive unit tests with <strong>99%</strong> coverage.',
       'Mastered advanced Python development through BlackRock\'s APDC Bronze, Silver, and Gold certifications, achieving a <strong>top 5%</strong> score on final project assessments as the most junior member on the team.'
