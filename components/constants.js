@@ -47,7 +47,7 @@ export const experiences = [
     ]
   },
   {
-    role: 'Data & Software Engineering Intern',
+    role: 'Software Engineering Intern',
     company: 'BlackRock',
     period: 'Jan 2025 - Jun 2025',
     bullets: [
