@@ -25,9 +25,6 @@ const AboutSection = () => {
                         <p className="text-gray-400 text-lg leading-relaxed">
                             Specialising in Backend & Applied AI Engineering, do checkout my recent projects, professional experience and completed coursework!
                         </p>
-                        <p className="text-gray-400 text-lg italic">
-                            PS: I&apos;m not open to work currently
-                        </p>
 
 
                     </div>
