@@ -20,7 +20,7 @@ const AboutSection = () => {
                         </h2>
 
                         <p className="text-gray-400 text-lg leading-relaxed">
-                            High agency engineer with strong problem-solving, product sense & experience building across the stack - specializing in building with LLMs.
+                            A high agency engineer with strong problem-solving, product sense & experience building across the stack - specializing in building with LLMs.
                         </p>
                         <p className="text-gray-400 text-lg leading-relaxed">
                             Also, I love automating everything!
