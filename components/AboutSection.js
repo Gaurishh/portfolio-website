@@ -20,12 +20,11 @@ const AboutSection = () => {
                         </h2>
 
                         <p className="text-gray-400 text-lg leading-relaxed">
-                            A product-minded Developer with a passion for problem-solving and collaborating to build impactful products.
+                            High agency engineer with strong problem-solving, product sense & experience building across the stack - specializing in building with LLMs.
                         </p>
                         <p className="text-gray-400 text-lg leading-relaxed">
-                            Specialising in Backend & Applied AI Engineering, do checkout my projects, professional experience and completed coursework!
+                            Also, I love automating everything!
                         </p>
-
 
                     </div>
 
