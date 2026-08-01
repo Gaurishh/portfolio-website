@@ -57,10 +57,10 @@ const AboutSection = () => {
                                     <User className="text-blue-400" /> About Me
                                 </h3>
                                 <p>
-                                    I&apos;m a <strong>CSE</strong> graduate from <strong>NIT Delhi</strong> and have solved over 1500+ DSA/CP questions, achieving a <strong className="text-blue-400">2010 rating on LeetCode</strong> & <strong className="text-blue-400">1426 on Codeforces</strong>.
+                                    I&apos;m a <strong>CSE</strong> graduate from <strong>NIT Delhi</strong>, during college I spent a lot of time competitive programming, solving over 1500 DSA/CP questions, achieving a <strong className="text-blue-400">2010 rating on LeetCode</strong> & <strong className="text-blue-400">1426 on Codeforces</strong>.
                                 </p>
                                 <p>
-                                    Now, I&apos;m channelling that same drive into building with AI, designing robust backend systems and creating impactful applications.
+                                    Now, I&apos;m channelling that same drive into building with LLMs, designing robust backend systems and creating impactful applications.
                                 </p>
                                 <p>
                                     When I&apos;m not working, you&apos;ll usually find me listening to music, learning something new or spending time with friends/family.
