@@ -60,7 +60,7 @@ const AboutSection = () => {
                                     I&apos;m a <strong>CSE</strong> graduate from <strong>NIT Delhi</strong>, and I consider myself to be someone with a very strong bias for action, during my college years I've spent a lot of time building real world projects, doing competitive programming, and exploring CS domains through self-directed coursework.
                                 </p>
                                 <p>
-                                    Now, I&apos;m channelling that same drive into building with LLMs, automating eval-driven workflows, designing robust backend systems and creating impactful applications.
+                                    Now, I&apos;m channelling that same drive into building with LLMs, automating everyday work, designing robust backend systems and creating impactful applications.
                                 </p>
                                 <p>
                                     When I&apos;m not working, you&apos;ll usually find me listening to music, learning something new or spending time with friends/family.
