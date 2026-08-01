@@ -15,10 +15,6 @@ const AboutSection = () => {
                             Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Gaurish</span>
                         </h1>
 
-                        <h2 className="text-xl md:text-2xl text-gray-400 font-medium">
-                            Software Engineer
-                        </h2>
-
                         <p className="text-gray-400 text-lg leading-relaxed">
                             A high agency engineer with strong problem-solving, product sense & experience building across the stack - specializing in building with LLMs.
                         </p>
