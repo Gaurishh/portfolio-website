@@ -90,7 +90,7 @@ const AboutSection = () => {
                                 </div>
                                 <div className="bg-gray-900/80 p-4 rounded-xl text-center border border-gray-800 col-span-2 hover:border-blue-500/30 transition-colors">
                                     <div className="text-3xl font-bold text-blue-400 mb-1">Top 2.5%</div>
-                                    <div className="text-xs text-gray-500 uppercase tracking-wider">LeetCode Knight</div>
+                                    <div className="text-xs text-gray-500 uppercase tracking-wider">LeetCode</div>
                                 </div>
                                 <div className="bg-gray-900/80 p-4 rounded-xl text-center border border-gray-800 col-span-2 hover:border-blue-500/30 transition-colors">
                                     <div className="text-3xl font-bold text-blue-400 mb-1">30+</div>
