@@ -36,7 +36,7 @@ export const experiences = [
   {
     role: 'Analyst (Engineer 1)',
     company: 'BlackRock',
-    period: 'Jul 2025 - Present',
+    period: 'Jul 2025 - Dec 2025',
     bullets: [
       'Diagnosed <strong>read-overload</strong> in the data fan-out server by collaborating with senior engineers to analyze <strong>Prometheus/Grafana metrics</strong> and identify high-traffic <strong>"problematic clients"</strong>. Designed and implemented a <strong>scalable dual-write architecture</strong>, modifying upstream components to write selectively to <strong>primary</strong> and <strong>dual_write tables</strong> which significantly <strong>reduced DB retrieval latency</strong>.',
       'Migrated event processing to the <strong>event-driven fanout server</strong> (BMSNetworkFanout), which pushed filtered updates, centralizing incoming event processing and replacing redundant polling jobs, which streamlined data delivery across systems and improved system response time by <strong>97%</strong>.',
