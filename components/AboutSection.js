@@ -61,7 +61,7 @@ const AboutSection = () => {
                                 </p>
                 
                                 <p>
-                                    Currently, I&apos;m channelling this same drive into building with LLMs, automating everyday work, designing robust backend systems and creating impactful applications.
+                                    Currently, I&apos;m focused on building with LLMs, automating everyday work, designing robust backend systems and creating impactful applications.
                                 </p>
                                 <p>
                                     When I&apos;m not working, you&apos;ll usually find me listening to music, learning something new or spending time with friends/family.
