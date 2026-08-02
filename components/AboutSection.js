@@ -53,8 +53,13 @@ const AboutSection = () => {
                                     <User className="text-blue-400" /> About Me
                                 </h3>
                                 <p>
-                                    I consider myself to be someone with a very strong bias for action. During my years at <strong>NIT Delhi</strong>, I've spent a lot of time tinkering with tech, solving real world problems, indulging in competitive programming, exploring various CS domains through self-directed coursework.
+                                    I consider myself to be someone with a very strong bias for action. During my years at <strong>NIT Delhi</strong>, I've spent a lot of time tinkering with tech, solving real world problems, indulging in competitive programming, and exploring various CS domains through self-directed coursework.
                                 </p>
+
+                                <p>
+                                    In general - I believe in working very hard and most importantly, have fun in doing that!
+                                </p>
+                
                                 <p>
                                     Now, I&apos;m channelling that same drive into building with LLMs, automating everyday work, designing robust backend systems and creating impactful applications.
                                 </p>
