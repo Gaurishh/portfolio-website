@@ -19,7 +19,7 @@ const AboutSection = () => {
                             A high-agency engineer with strong problem-solving, product sense & experience shipping across the stack - specializing in building with LLMs.
                         </p>
                         <p className="text-gray-400 text-lg leading-relaxed">
-                            Always eager to connect with other passionate builders!
+                            Always eager to build and connect with other passionate people!
                         </p>
 
                     </div>
