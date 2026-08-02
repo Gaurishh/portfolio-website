@@ -57,7 +57,7 @@ const AboutSection = () => {
                                 </p>
 
                                 <p>
-                                    In general - I believe in working very hard and most importantly, have fun doing that!
+                                    In general, I believe in working very hard and most importantly - have fun doing that!
                                 </p>
                 
                                 <p>
