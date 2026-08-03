@@ -20,12 +20,12 @@ export const sections = {
 export const profiles = [
   { name: 'Codolio', url: 'https://codolio.com/profile/GaurishS', handle: 'Compiled summary of all coding profiles', icon: CodolioIcon },
   { name: 'GitHub', url: 'https://github.com/Gaurishh', handle: 'Gaurishh (25+ Repositories)', icon: Github },
-  { name: 'LeetCode', url: 'https://www.leetcode.com/GaurishS/', handle: 'GaurishS (800+ Problems, Knight Badge - Top 2.5%)', icon: LeetCodeIcon },
-  { name: 'Codeforces', url: 'https://codeforces.com/profile/GaurishS', handle: 'GaurishS (350+ Problems, 1388 peak rating)', icon: CodeforcesIcon },
+  { name: 'LeetCode', url: 'https://www.leetcode.com/GaurishS/', handle: 'GaurishS (800+ Problems, Top 2.5% contest rating)', icon: LeetCodeIcon },
+  { name: 'Codeforces', url: 'https://codeforces.com/profile/GaurishS', handle: 'GaurishS (350+ Problems, 1426 peak rating)', icon: CodeforcesIcon },
   { name: 'Naukri Code360', url: 'https://www.naukri.com/code360/profile/e6a56a68-5892-4123-88a9-2e9c24a33a19', handle: 'GaurishS (150+ Problems)', icon: Code360Icon },
   { name: 'GeeksforGeeks', url: 'https://www.geeksforgeeks.org/user/gaurish_s12', handle: 'gaurish_s12 (150+ Problems, 490 Score)', icon: GeeksforGeeksIcon },
   { name: 'CSES Problem Set', url: 'https://cses.fi/user/98779', handle: 'GaurishS (90+ Problems)', icon: CSESIcon },
-  { name: 'CodeChef', url: 'https://www.codechef.com/users/gaurish_s12', handle: 'gaurish_s12 (50+ Problems, 1709 rating)', icon: CodeChefIcon }
+  { name: 'CodeChef', url: 'https://www.codechef.com/users/gaurish_s12', handle: 'gaurish_s12 (50+ Problems)', icon: CodeChefIcon }
 ];
 
 export const experiences = [
