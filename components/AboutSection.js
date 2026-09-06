@@ -16,7 +16,7 @@ const AboutSection = () => {
                         </h1>
 
                         <p className="text-gray-400 text-lg leading-relaxed">
-                            A high-agency engineer with strong problem-solving, product sense & experience shipping across the stack - specializing in building with LLMs.
+                            High-agency engineer, specializing in building with LLMs.
                         </p>
                         <p className="text-gray-400 text-lg leading-relaxed">
                             Always eager to connect with other passionate builders!
